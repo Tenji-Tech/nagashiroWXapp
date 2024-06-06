@@ -1,0 +1,12 @@
+.goods-list-wrap {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 0;
+  background: #fff;
+}
+
+/* 为每个 goods-card 添加间距 */
+.goods-card-inside {
+  margin: 3px; /* 根据需要调整间距大小 */
+}

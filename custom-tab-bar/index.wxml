@@ -1,0 +1,21 @@
+<t-tab-bar
+ value="{{active}}"
+ bindchange="onChange"
+ split="{{false}}"
+>
+	<t-tab-bar-item
+	 wx:for="{{list}}"
+	 wx:for-item="item"
+	 wx:for-index="index"
+	 wx:key="index"
+	>
+	<view class="custom-tab-bar-wrapper {{active == index ? 'active' : ''}}">
+		<view class="icon-wrapper {{active == index ? 'active' : ''}}">
+			<t-icon prefix="wr" name="{{item.icon}}" size="48rpx" />
+		</view>
+		<view class="text {{active == index ? 'active' : ''}}">{{ item.text }}</view>
+	</view>
+
+	</t-tab-bar-item>
+</t-tab-bar>
+
