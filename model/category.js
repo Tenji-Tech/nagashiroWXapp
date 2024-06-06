@@ -3,41 +3,51 @@ export function getCategoryList() {
     {
       groupId: 'Z',
       name: '应季食材',
-      thumbnail:'',
+      name_en: 'Seasonal',
+      name_jp: '季節食材',
+      thumbnail: '',
       children: [
         {
           groupId: 'Z0',
           name: ' ',
+          name_en: ' ',
+          name_jp: ' ',
           thumbnail: '',
           children: [
             {
               groupId: 'Z1',
               name: '鲜鱼',
-              thumbnail:'/images/cat/Z/Z1.png',
+              name_en: 'FreshFish',
+              name_jp: '鮮魚',
+              thumbnail: '/images/cat/Z/Z1.png',
             },
             {
               groupId: 'Z2',
               name: '活鱼',
-              thumbnail:
-                '/images/cat/Z/Z2.png',
+              name_en: 'LiveFish',
+              name_jp: '活魚',
+              thumbnail: '/images/cat/Z/Z2.png',
             },
             {
               groupId: 'Z3',
               name: '贝类',
-              thumbnail:
-                '/images/cat/Z/Z3.png',
+              name_en: 'Shellfish',
+              name_jp: '貝類',
+              thumbnail: '/images/cat/Z/Z3.png',
             },
             {
               groupId: 'Z4',
               name: '蔬菜',
-              thumbnail:
-                '/images/cat/Z/Z4.png',
+              name_en: 'Veggies',
+              name_jp: '野菜',
+              thumbnail: '/images/cat/Z/Z4.png',
             },
             {
               groupId: 'Z5',
               name: '水果',
-              thumbnail:
-                '/images/cat/Z/Z5.png',
+              name_en: 'Fruits',
+              name_jp: '果物',
+              thumbnail: '/images/cat/Z/Z5.png',
             },
           ],
         },
@@ -46,60 +56,72 @@ export function getCategoryList() {
     {
       groupId: 'A',
       name: '鲜鱼类',
+      name_en: 'Fish',
+      name_jp: '魚類',
       thumbnail: '',
       children: [
         {
           groupId: 'A0',
           name: ' ',
+          name_en: ' ',
+          name_jp: ' ',
           thumbnail: '',
           children: [
             {
               groupId: 'A1',
               name: '青花鱼类',
-              thumbnail:
-              '/images/cat/A/A1.png',
+              name_en: 'Mackerel',
+              name_jp: '鯖',
+              thumbnail: '/images/cat/A/A1.png',
             },
             {
               groupId: 'A2',
               name: '鳕鱼科',
-              thumbnail:
-              '/images/cat/A/A2.png',
+              name_en: 'Codfish',
+              name_jp: '鱈',
+              thumbnail: '/images/cat/A/A2.png',
             },
             {
               groupId: 'A3',
               name: '金枪鱼',
-              thumbnail:
-              '/images/cat/A/A3.png',
+              name_en: 'Tuna',
+              name_jp: '鮪',
+              thumbnail: '/images/cat/A/A3.png',
             },
             {
               groupId: 'A4',
               name: '鲈鱼科',
-              thumbnail:
-              '/images/cat/A/A4.png',
+              name_en: 'Bass',
+              name_jp: '鱸',
+              thumbnail: '/images/cat/A/A4.png',
             },
             {
               groupId: 'A5',
               name: '鲑鱼科',
-              thumbnail:
-              '/images/cat/A/A5.png',
+              name_en: 'Salmon',
+              name_jp: '鮭',
+              thumbnail: '/images/cat/A/A5.png',
             },
             {
               groupId: 'A6',
               name: '比目鱼科',
-              thumbnail:
-              '/images/cat/A/A6.png',
+              name_en: 'Flounder',
+              name_jp: '鰈',
+              thumbnail: '/images/cat/A/A6.png',
             },
             {
               groupId: 'A7',
               name: '海胆',
-              thumbnail:
-              '/images/cat/A/A7.png',
+              name_en: 'Urchin',
+              name_jp: '雲丹',
+              thumbnail: '/images/cat/A/A7.png',
             },
             {
               groupId: 'A8',
               name: '特殊部位',
-              thumbnail:
-              '/images/cat/A/A8.png',
+              name_en: 'Special',
+              name_jp: '特殊部位',
+              thumbnail: '/images/cat/A/A8.png',
             },
           ],
         },
@@ -108,38 +130,44 @@ export function getCategoryList() {
     {
       groupId: 'B',
       name: '其他海鲜',
-      thumbnail:
-        '',
+      name_en: 'OtherSea',
+      name_jp: '他の海鮮',
+      thumbnail: '',
       children: [
         {
           groupId: 'B0',
           name: ' ',
-          thumbnail:
-            '',
+          name_en: ' ',
+          name_jp: ' ',
+          thumbnail: '',
           children: [
             {
               groupId: 'B1',
               name: '鱿鱼类',
-              thumbnail:
-              '/images/cat/B/B1.png',
+              name_en: 'Squid',
+              name_jp: '烏賊',
+              thumbnail: '/images/cat/B/B1.png',
             },
             {
               groupId: 'B2',
               name: '虾类',
-              thumbnail:
-              '/images/cat/B/B2.png',
+              name_en: 'Shrimp',
+              name_jp: '海老',
+              thumbnail: '/images/cat/B/B2.png',
             },
             {
               groupId: 'B3',
               name: '贝类',
-              thumbnail:
-              '/images/cat/B/B3.png',
+              name_en: 'Shellfish',
+              name_jp: '貝類',
+              thumbnail: '/images/cat/B/B3.png',
             },
             {
               groupId: 'B4',
               name: '蟹类',
-              thumbnail:
-              '/images/cat/B/B4.png',
+              name_en: 'Crab',
+              name_jp: '蟹',
+              thumbnail: '/images/cat/B/B4.png',
             },
           ],
         },
@@ -148,38 +176,44 @@ export function getCategoryList() {
     {
       groupId: 'C',
       name: '冷冻品',
-      thumbnail:
-        '',
+      name_en: 'Frozen',
+      name_jp: '冷凍品',
+      thumbnail: '',
       children: [
         {
           groupId: 'C0',
           name: ' ',
-          thumbnail:
-            '',
+          name_en: ' ',
+          name_jp: ' ',
+          thumbnail: '',
           children: [
             {
               groupId: 'C1',
               name: '鱼类',
-              thumbnail:
-              '/images/cat/C/C1.png',
+              name_en: 'Fish',
+              name_jp: '魚類',
+              thumbnail: '/images/cat/C/C1.png',
             },
             {
               groupId: 'C2',
               name: '鱿鱼类',
-              thumbnail:
-              '/images/cat/C/C2.png',
+              name_en: 'Squid',
+              name_jp: '烏賊',
+              thumbnail: '/images/cat/C/C2.png',
             },
             {
               groupId: 'C3',
               name: '虾类',
-              thumbnail:
-              '/images/cat/C/C3.png',
+              name_en: 'Shrimp',
+              name_jp: '海老',
+              thumbnail: '/images/cat/C/C3.png',
             },
             {
               groupId: 'C4',
               name: '加工食品',
-              thumbnail:
-              '/images/cat/C/C4.png',
+              name_en: 'Processed',
+              name_jp: '加工品',
+              thumbnail: '/images/cat/C/C4.png',
             },
           ],
         },
@@ -188,230 +222,277 @@ export function getCategoryList() {
     {
       groupId: 'D',
       name: '蔬菜类',
-      thumbnail:  '',
-      children: [{
-        groupId: 'D0',
-        name: ' ',
-        thumbnail:
-          '',
-        children: [
-          {
-            groupId: 'D1',
-            name: '茄果类',
-            thumbnail:
-            '/images/cat/D/D1.png',
-          },
-          {
-            groupId: 'D2',
-            name: '芋头类',
-            thumbnail:
-            '/images/cat/D/D2.png',
-          },
-          {
-            groupId: 'D3',
-            name: '根菜类',
-            thumbnail:
-            '/images/cat/D/D3.png',
-          },
-          {
-            groupId: 'D4',
-            name: '根茎类',
-            thumbnail:
-            '/images/cat/D/D4.png',
-          },
-          {
-            groupId: 'D5',
-            name: '菌菇类',
-            thumbnail:
-            '/images/cat/D/D5.png',
-          },
-          {
-            groupId: 'D6',
-            name: '豆类',
-            thumbnail:
-            '/images/cat/D/D6.png',
-          },
-          {
-            groupId: 'D7',
-            name: '叶菜类',
-            thumbnail:
-            '/images/cat/D/D7.png',
-          },
-          {
-            groupId: 'D8',
-            name: '山菜类',
-            thumbnail:
-            '/images/cat/D/D8.png',
-          },
-          {
-            groupId: 'D9',
-            name: '食用花',
-            thumbnail:
-            '/images/cat/D/D9.png',
-          },
-        ],
-      },]
+      name_en: 'Veggies',
+      name_jp: '野菜類',
+      thumbnail: '',
+      children: [
+        {
+          groupId: 'D0',
+          name: ' ',
+          name_en: ' ',
+          name_jp: ' ',
+          thumbnail: '',
+          children: [
+            {
+              groupId: 'D1',
+              name: '茄果类',
+              name_en: 'Nightshade',
+              name_jp: '茄子科',
+              thumbnail: '/images/cat/D/D1.png',
+            },
+            {
+              groupId: 'D2',
+              name: '芋头类',
+              name_en: 'Taro',
+              name_jp: '芋類',
+              thumbnail: '/images/cat/D/D2.png',
+            },
+            {
+              groupId: 'D3',
+              name: '根菜类',
+              name_en: 'RootVeg',
+              name_jp: '根菜類',
+              thumbnail: '/images/cat/D/D3.png',
+            },
+            {
+              groupId: 'D4',
+              name: '根茎类',
+              name_en: 'Rhizome',
+              name_jp: '根茎類',
+              thumbnail: '/images/cat/D/D4.png',
+            },
+            {
+              groupId: 'D5',
+              name: '菌菇类',
+              name_en: 'Mushroom',
+              name_jp: '茸類',
+              thumbnail: '/images/cat/D/D5.png',
+            },
+            {
+              groupId: 'D6',
+              name: '豆类',
+              name_en: 'Beans',
+              name_jp: '豆類',
+              thumbnail: '/images/cat/D/D6.png',
+            },
+            {
+              groupId: 'D7',
+              name: '叶菜类',
+              name_en: 'LeafVeg',
+              name_jp: '葉菜類',
+              thumbnail: '/images/cat/D/D7.png',
+            },
+            {
+              groupId: 'D8',
+              name: '山菜类',
+              name_en: 'MountainVeg',
+              name_jp: '山菜類',
+              thumbnail: '/images/cat/D/D8.png',
+            },
+            {
+              groupId: 'D9',
+              name: '食用花',
+              name_en: 'EdibleFlow',
+              name_jp: '食用花',
+              thumbnail: '/images/cat/D/D9.png',
+            },
+          ],
+        },
+      ],
     },
     {
       groupId: 'E',
       name: '水果类',
-      thumbnail:
-        '',
-      children: [{
-        groupId: 'E0',
-        name: ' ',
-        thumbnail:
-          '',
-        children: [
-          {
-            groupId: 'E01',
-            name: '草莓',
-            thumbnail:
-            '/images/cat/E/E01.png',
-          },
-          {
-            groupId: 'E02',
-            name: '哈蜜瓜',
-            thumbnail:
-            '/images/cat/E/E02.png',
-          },
-          {
-            groupId: 'E03',
-            name: '葡萄',
-            thumbnail:
-            '/images/cat/E/E03.png',
-          },
-          {
-            groupId: 'E04',
-            name: '梨',
-            thumbnail:
-            '/images/cat/E/E04.png',
-          },
-          {
-            groupId: 'E05',
-            name: '桃',
-            thumbnail:
-            '/images/cat/E/E05.png',
-          },
-          {
-            groupId: 'E06',
-            name: '苹果',
-            thumbnail:
-            '/images/cat/E/E06.png',
-          },
-          {
-            groupId: 'E07',
-            name: '柿子',
-            thumbnail:
-            '/images/cat/E/E07.png',
-          },
-          {
-            groupId: 'E08',
-            name: '梅',
-            thumbnail:
-            '/images/cat/E/E08.png',
-          },
-          {
-            groupId: 'E09',
-            name: '栗子',
-            thumbnail:
-            '/images/cat/E/E09.png',
-          },
-          {
-            groupId: 'E10',
-            name: '柑橘',
-            thumbnail:
-            '/images/cat/E/E10.png',
-          },
-          {
-            groupId: 'E11',
-            name: '其他',
-            thumbnail:
-            '/images/cat/E/E11.png',
-          },
-          {
-            groupId: 'E12',
-            name: '装饰用',
-            thumbnail:
-            '/images/cat/E/E12.png',
-          },
-        ],
-      },]
+      name_en: 'Fruits',
+      name_jp: '果物類',
+      thumbnail: '',
+      children: [
+        {
+          groupId: 'E0',
+          name: ' ',
+          name_en: ' ',
+          name_jp: ' ',
+          thumbnail: '',
+          children: [
+            {
+              groupId: 'E01',
+              name: '草莓',
+              name_en: 'Strawberry',
+              name_jp: '苺',
+              thumbnail: '/images/cat/E/E01.png',
+            },
+            {
+              groupId: 'E02',
+              name: '哈蜜瓜',
+              name_en: 'Melon',
+              name_jp: 'メロン',
+              thumbnail: '/images/cat/E/E02.png',
+            },
+            {
+              groupId: 'E03',
+              name: '葡萄',
+              name_en: 'Grape',
+              name_jp: '葡萄',
+              thumbnail: '/images/cat/E/E03.png',
+            },
+            {
+              groupId: 'E04',
+              name: '梨',
+              name_en: 'Pear',
+              name_jp: '梨',
+              thumbnail: '/images/cat/E/E04.png',
+            },
+            {
+              groupId: 'E05',
+              name: '桃',
+              name_en: 'Peach',
+              name_jp: '桃',
+              thumbnail: '/images/cat/E/E05.png',
+            },
+            {
+              groupId: 'E06',
+              name: '苹果',
+              name_en: 'Apple',
+              name_jp: '林檎',
+              thumbnail: '/images/cat/E/E06.png',
+            },
+            {
+              groupId: 'E07',
+              name: '柿子',
+              name_en: 'Persimmon',
+              name_jp: '柿',
+              thumbnail: '/images/cat/E/E07.png',
+            },
+            {
+              groupId: 'E08',
+              name: '梅',
+              name_en: 'Plum',
+              name_jp: '梅',
+              thumbnail: '/images/cat/E/E08.png',
+            },
+            {
+              groupId: 'E09',
+              name: '栗子',
+              name_en: 'Chestnut',
+              name_jp: '栗',
+              thumbnail: '/images/cat/E/E09.png',
+            },
+            {
+              groupId: 'E10',
+              name: '柑橘',
+              name_en: 'Citrus',
+              name_jp: '柑橘',
+              thumbnail: '/images/cat/E/E10.png',
+            },
+            {
+              groupId: 'E11',
+              name: '其他',
+              name_en: 'Other',
+              name_jp: '他',
+              thumbnail: '/images/cat/E/E11.png',
+            },
+            {
+              groupId: 'E12',
+              name: '装饰用',
+              name_en: 'Decor',
+              name_jp: '装飾用',
+              thumbnail: '/images/cat/E/E12.png',
+            },
+          ],
+        },
+      ],
     },
     {
       groupId: 'F',
       name: '加工品',
+      name_en: 'Processed',
+      name_jp: '加工品',
       thumbnail: '',
-      children: [{
-        groupId: 'F0',
-        name: ' ',
-        thumbnail:
-          '',
-        children: [
-          {
-            groupId: 'F1',
-            name: '蔬菜腌渍',
-            thumbnail:
-            '/images/cat/F/F1.png',
-          },
-          {
-            groupId: 'F2',
-            name: '鱼类腌渍',
-            thumbnail:
-            '/images/cat/F/F2.png',
-          },
-          {
-            groupId: 'F3',
-            name: '其他',
-            thumbnail:
-            '/images/cat/F/F3.png',
-          },
-          {
-            groupId: 'F4',
-            name: '干货',
-            thumbnail:
-            '/images/cat/F/F4.png',
-          },
-          {
-            groupId: 'F5',
-            name: '加工水果',
-            thumbnail:
-            '/images/cat/F/F5.png',
-          },
-        ],
-      },]
+      children: [
+        {
+          groupId: 'F0',
+          name: ' ',
+          name_en: ' ',
+          name_jp: ' ',
+          thumbnail: '',
+          children: [
+            {
+              groupId: 'F1',
+              name: '蔬菜腌渍',
+              name_en: 'PickledVeg',
+              name_jp: '漬け野菜',
+              thumbnail: '/images/cat/F/F1.png',
+            },
+            {
+              groupId: 'F2',
+              name: '鱼类腌渍',
+              name_en: 'PickledFish',
+              name_jp: '漬け魚',
+              thumbnail: '/images/cat/F/F2.png',
+            },
+            {
+              groupId: 'F3',
+              name: '其他',
+              name_en: 'Other',
+              name_jp: '他',
+              thumbnail: '/images/cat/F/F3.png',
+            },
+            {
+              groupId: 'F4',
+              name: '干货',
+              name_en: 'Dried',
+              name_jp: '乾物',
+              thumbnail: '/images/cat/F/F4.png',
+            },
+            {
+              groupId: 'F5',
+              name: '加工水果',
+              name_en: 'ProcFruit',
+              name_jp: '加工果物',
+              thumbnail: '/images/cat/F/F5.png',
+            },
+          ],
+        },
+      ],
     },
     {
       groupId: 'G',
       name: '其他',
+      name_en: 'Other',
+      name_jp: '他',
       thumbnail: '',
-      children: [{
-        groupId: 'G0',
-        name: ' ',
-        thumbnail:
-          '',
-        children: [
-          {
-            groupId: 'G1',
-            name: '调料品',
-            thumbnail:
-            '/images/cat/G/G1.png',
-          },
-          {
-            groupId: 'G2',
-            name: '厨房器具',
-            thumbnail:
-            '/images/cat/G/G2.png',
-          },
-          {
-            groupId: 'G3',
-            name: '消耗品',
-            thumbnail:
-            '/images/cat/G/G3.png',
-          },
-        ],
-      },]
+      children: [
+        {
+          groupId: 'G0',
+          name: ' ',
+          name_en: ' ',
+          name_jp: ' ',
+          thumbnail: '',
+          children: [
+            {
+              groupId: 'G1',
+              name: '调料品',
+              name_en: 'Seasoning',
+              name_jp: '調味料',
+              thumbnail: '/images/cat/G/G1.png',
+            },
+            {
+              groupId: 'G2',
+              name: '厨房器具',
+              name_en: 'KitchenWare',
+              name_jp: '厨房器具',
+              thumbnail: '/images/cat/G/G2.png',
+            },
+            {
+              groupId: 'G3',
+              name: '消耗品',
+              name_en: 'Consumable',
+              name_jp: '消耗品',
+              thumbnail: '/images/cat/G/G3.png',
+            },
+          ],
+        },
+      ],
     },
-    
   ];
 }
