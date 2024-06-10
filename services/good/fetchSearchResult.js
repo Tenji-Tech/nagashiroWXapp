@@ -13,6 +13,8 @@ function mockSearchResult(params) {
       item.spuId = item.spuId;
       item.thumb = item.primaryImage;
       item.title = item.title;
+      item.title_jp = item.title_jp;
+      item.title_en = item.title_en;
       item.price = item.minSalePrice;
       item.originPrice = item.maxLinePrice;
       if (item.spuTagList) {

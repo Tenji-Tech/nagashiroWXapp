@@ -261,6 +261,9 @@ Page({
       spuId: this.data.details.spuId,
       thumb: this.data.details.primaryImage,
       title: this.data.details.title,
+      title_jp: this.data.details.title_jp,
+      title_en: this.data.details.title_en,
+      subTitle:  this.data.skuList[0].weight.desc,
     };
     let urlQueryStr = obj2Params({
       goodsRequestList: JSON.stringify([query]),

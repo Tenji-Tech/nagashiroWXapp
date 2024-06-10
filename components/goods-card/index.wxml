@@ -6,18 +6,19 @@
 >
 	<view class="goods-card__main">
 		<view class="goods-card__thumb" bind:tap="clickThumbHandle">
-			<t-image
+			<image
 			  wx:if="{{ !!goods.thumb }}"
 			  t-class="goods-card__img"
-			  src="{{ goods.thumb }}"
+			  src="{{goods.thumb}}"
 			  mode="aspectFill"
-			  lazy-load
+			  style="width: 140px; height: 120px; background-color: #eeeeee;"
+				lazyload
 			/>
 		</view>
 		<view class="goods-card__body">
 			<view class="goods-card__upper">
 				<view wx:if="{{ goods.title }}" class="goods-card__title">
-					{{ goods.title }}
+					{{ goods.title_jp }}
 				</view>
 				<view wx:if="{{ goods.tags && !!goods.tags.length }}" class="goods-card__tags">
 					<view
@@ -27,8 +28,7 @@
 					  class="goods-card__tag"
 					  data-index="{{index}}"
 					>
-						500克/袋
-						<!-- {{tag}} -->
+						{{goods.subTitle}}
 					</view>
 				</view>
 			</view>

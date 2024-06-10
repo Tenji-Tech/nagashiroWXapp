@@ -361,3 +361,23 @@ page {
   font-size: 28rpx;
   font-weight: 400;
 }
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 95%; /* 调整宽度以适应需要的尺寸 */
+  height: 64rpx; /* 调整高度以适应需要的尺寸 */
+}
+
+.flex-item {
+  display: flex;
+  justify-content: center; /* 使内容水平居中 */
+  align-items: center; /* 使内容垂直居中 */
+  width: 49%; /* 每个项目占据宽度的1/2 */
+  height: 49%; /* 每个项目占据高度的1/2 */
+  box-sizing: border-box; /* 确保边框在宽度和高度内 */
+}
+
+.goods-label-detail {
+  text-align: left;
+}

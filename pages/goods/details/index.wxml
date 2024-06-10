@@ -37,7 +37,7 @@
         </view> -->
       </view>
       <view class="goods-title">
-        <view class="goods-name">{{details.title}}</view>
+        <view class="goods-name">{{details.title_jp}}</view>
         <!-- <view class="goods-tag">
           <t-button open-type="share" t-class="shareBtn" variant="text">
             <view class="btn-icon">
@@ -48,15 +48,20 @@
         </view> -->
       </view>
 
-      <view class="goods-name-small" >国産秋さけ切り身 60g×5枚入り</view>
+      <view class="goods-name-small" >{{details.title_en}}</view>
 
-      <view style="flex-direction: row;">
-        <view class="goods-label-detail" >品牌:             SYOKURABO</view>
-        <!-- <view class="goods-label-detail" ></view> -->
-      </view>
-      <view style="flex-direction: row;">
-        <view class="goods-label-detail" >商品重量:      60 克/5枚</view>
-        <!-- <view class="goods-label-detail" >    60 克/5枚</view> -->
+      <view class="flex-container">
+        <view class="flex-item goods-label-detail">
+          品牌:             SYOKURABO</view>
+        <view class="flex-item goods-label-detail">
+          商品形状:             切块
+        </view>
+        <view class="flex-item goods-label-detail">
+          商品重量:      {{details.subTitle}}
+        </view>
+        <view class="flex-item goods-label-detail">
+          储藏条件:      冷冻
+        </view>
       </view>
 
       <view class="goods-intro">{{intro}}</view>
