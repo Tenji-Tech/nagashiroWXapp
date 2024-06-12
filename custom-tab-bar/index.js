@@ -6,6 +6,20 @@ Component({
   },
 
   methods: {
+    updateTabBar: function () {
+      
+      const language = getApp().globalData.language;
+      console.log('TabMenu: updateTabBar',language)
+      this.setData({
+        list: [
+          { icon: 'home', text: language.tabBar.home, url: 'pages/home/home', },
+          { icon: 'sort', text: language.tabBar.category, url: 'pages/goods/category/index', },
+          { icon: 'cart', text: language.tabBar.cart, url: 'pages/cart/index', },
+          { icon: 'person', text: language.tabBar.user,url: 'pages/usercenter/index', }
+        ]
+      });
+    },
+
     onChange(event) {
       this.setData({ active: event.detail.value });
       wx.switchTab({
@@ -24,6 +38,7 @@ Component({
           `${route}`,
       );
       this.setData({ active });
+      this.updateTabBar();
     },
   },
 });

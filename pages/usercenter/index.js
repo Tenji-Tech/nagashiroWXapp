@@ -16,12 +16,12 @@ const menuData = [
       type: 'service',
       icon: 'service',
     },
-    // {
-    //   title: '切换语言',
-    //   tit: '',
-    //   url: '',
-    //   type: 'point',
-    // },
+    {
+      title: '切换语言',
+      tit: '3种',
+      url: '',
+      type: 'point',
+    },
   ],
   [
     {
@@ -79,6 +79,8 @@ const orderTagInfos = [
 
 const getDefaultData = () => ({
   showMakePhone: false,
+  showChangeLang: false,
+  selectedLanguage: wx.getStorageSync('language'),
   userInfo: {
     avatarUrl: '',
     nickName: '正在登录...',
@@ -167,13 +169,14 @@ Page({
         break;
       }
       case 'point': {
-        Toast({
-          context: this,
-          selector: '#t-toast',
-          message: '你点击了切换语言',
-          icon: '',
-          duration: 1000,
-        });
+        this.openChangeLang();
+        // Toast({
+        //   context: this,
+        //   selector: '#t-toast',
+        //   message: '你点击了切换语言',
+        //   icon: '',
+        //   duration: 1000,
+        // });
         break;
       }
       case 'coupon': {
@@ -215,16 +218,43 @@ Page({
     this.setData({ showMakePhone: false });
   },
 
+  openChangeLang() {
+    this.setData({ showChangeLang: true });
+  },
+
+  closeChangeLang() {
+    this.setData({ showChangeLang: false });
+  },
+
   call() {
     wx.makePhoneCall({
       phoneNumber: this.data.customerServiceInfo.servicePhone,
     });
   },
 
+  changeLangCN() {
+    this.changeLang('zh')
+  },
+  changeLangEN() {
+    this.changeLang('en')
+  },
+  changeLangJP() {
+    this.changeLang('jp')
+  },
+  changeLang(lang){
+    console.log('changeLang', lang)
+    wx.setStorageSync('language', lang);
+    getApp().loadLanguage(lang);
+    this.setData({ selectedLanguage: lang });
+    wx.showToast({ title: '', icon: 'success' });
+    this.setData({ showChangeLang: false });
+  },
+
   gotoUserEditPage() {
     const { currAuthStep } = this.data;
     if (currAuthStep === 2) {
-      wx.navigateTo({ url: '/pages/usercenter/person-info/index' });
+      return;
+      // wx.navigateTo({ url: '/pages/usercenter/person-info/index' });
     } else {
       this.fetUseriInfoHandle();
     }

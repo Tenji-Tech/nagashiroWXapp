@@ -44,4 +44,18 @@
     <view class="popup-close" bind:tap="closeMakePhone">取消</view>
   </view>
 </t-popup>
+
+<t-popup visible="{{showChangeLang}}" placement="bottom" bind:visible-change="closeChangeLang" data-index="9">
+  <view class="popup-content">
+    <!-- <view class="popup-title border-bottom-1px" wx:if="{{customerServiceInfo.serviceTimeDuration}}">
+      服务时间: {{customerServiceInfo.serviceTimeDuration}}
+    </view> -->
+    <view class="popup-phone {{showKefu ? 'border-bottom-1px' : ''}}" bind:tap="changeLangCN">中文</view>
+    <view class="popup-phone {{showKefu ? 'border-bottom-1px' : ''}}" bind:tap="changeLangEN">English</view>
+    <view class="popup-phone {{showKefu ? 'border-bottom-1px' : ''}}" bind:tap="changeLangJP">日本語</view>
+    <!-- <button class="popup-phone border-bottom-1px online" open-type="contact" wx:if="{{showKefu}}">在线客服</button> -->
+    <view class="popup-close" bind:tap="closeMakePhone">取消</view>
+  </view>
+</t-popup>
+
 <t-toast id="t-toast" />

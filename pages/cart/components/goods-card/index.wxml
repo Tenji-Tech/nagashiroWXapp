@@ -8,7 +8,8 @@
 	<view class="wr-goods-card__main">
 		<view class="wr-goods-card__thumb thumb-class" bind:tap="clickThumbHandle">
 			<!-- data-src 是方便加购动画读取图片用的 -->
-			<t-image
+			<image
+				class="wr-goods-card__thumb-com"
 			  t-class="wr-goods-card__thumb-com"
 			  wx:if="{{ !!goods.thumb && !goods.hideKey.thumb }}"
 			  src="{{ goods.thumb }}"

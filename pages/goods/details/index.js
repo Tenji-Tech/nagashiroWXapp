@@ -48,7 +48,7 @@ Page({
       },
     ],
     storeLogo: `${imgPrefix}common/store-logo.png`,
-    storeName: '云mall标准版旗舰店',
+    storeName: 'NAGASHIRO水产东京旗舰店',
     jumpArray: [
       {
         title: '首页',

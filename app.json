@@ -34,7 +34,7 @@
     "custom": true,
     "color": "#086CD0",
     "selectedColor": "#086CD0",
-    "backgroundColor": "#086CD0",
+    "backgroundColor": "#fff",
     "borderStyle": "black",
     "list": [
       {
