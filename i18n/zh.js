@@ -10,5 +10,9 @@ module.exports = {
     "pages/goods/category/index": "分类",
     "pages/cart/index": "购物车",
     "pages/usercenter/index": "我的"
+  },
+  orderGroup: {
+    title: "我的订单",
+    desc: "全部订单"
   }
 };

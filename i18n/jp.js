@@ -1,14 +1,18 @@
 module.exports = {
   tabBar: {
-    home: "首页",
-    category: "分类",
-    cart: "购物车",
-    user: "我的"
+    home: "ホーム",
+    category: "カテゴリー",
+    cart: "カート",
+    user: "ユーザー"
   },
   navigationBar: {
-    "pages/home/home": "首页",
-    "pages/goods/category/index": "分类",
-    "pages/cart/index": "购物车",
-    "pages/usercenter/index": "我的"
+    "pages/home/home": "ホーム",
+    "pages/goods/category/index": "カテゴリー",
+    "pages/cart/index": "カート",
+    "pages/usercenter/index": "ユーザー"
+  },
+  orderGroup: {
+    title: "私の注文",
+    desc: "すべての注文"
   }
 };

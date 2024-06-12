@@ -10,5 +10,9 @@ module.exports = {
     "pages/goods/category/index": "Category",
     "pages/cart/index": "Cart",
     "pages/usercenter/index": "User"
+  },
+  orderGroup: {
+    title: "My Orders",
+    desc: "All Orders"
   }
 };

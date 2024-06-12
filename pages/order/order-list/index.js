@@ -103,7 +103,8 @@ Page({
               createTime: order.createTime,
               goodsList: (order.orderItemVOs || []).map((goods) => ({
                 id: goods.id,
-                thumb: cosThumb(goods.goodsPictureUrl, 70),
+                // thumb: cosThumb(goods.goodsPictureUrl, 70),
+                thumb: goods.goodsPictureUrl,
                 title: goods.goodsName,
                 skuId: goods.skuId,
                 spuId: goods.spuId,

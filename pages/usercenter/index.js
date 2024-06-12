@@ -170,13 +170,6 @@ Page({
       }
       case 'point': {
         this.openChangeLang();
-        // Toast({
-        //   context: this,
-        //   selector: '#t-toast',
-        //   message: '你点击了切换语言',
-        //   icon: '',
-        //   duration: 1000,
-        // });
         break;
       }
       case 'coupon': {

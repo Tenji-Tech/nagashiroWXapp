@@ -1,9 +1,16 @@
 import updateManager from './common/updateManager';
 
 App({
+  
+  globalData: {
+    language: null,
+    eventBus: null
+  },
+
   onLaunch: function () {
     const language = wx.getStorageSync('language') || 'zh';
     this.loadLanguage(language);
+    this.globalData.eventBus = this.createEventBus();
   },
   
   onShow: function () {
@@ -19,18 +26,14 @@ App({
       this.globalData.language = languageData;
       this.updateTabBarLanguage();
       this.updateNavigationBar();
+      this.emitLanguageChange();
     } catch (e) {
       console.log('app.js: loadLanguage fail', e);
     }
   },
-  globalData: {
-    language: null
-  },
+  
 
   updateTabBarLanguage: function () {
-    // console.log('app.js: updateTabBarLanguage', this.getTabBar())
-    // this.getTabBar().updateTabBar();
-
     const pages = getCurrentPages();
     console.log('app.js: try updateTabBarLanguage', pages, pages.length)
     if (pages.length) {
@@ -40,51 +43,6 @@ App({
         console.log('app.js: updateTabBarLanguage', currentPage.getTabBar())
       }
     }
-  },
-  updateTabBar: function () {
-    // const language = this.globalData.language;
-    // const tabBarList = [
-    //   {
-    //     "iconPath": "path/to/icon/home.png",
-    //     "selectedIconPath": "path/to/icon/home_selected.png",
-    //     "pagePath": "pages/home/home",
-    //     "text": language.tabBar.home
-    //   },
-    //   {
-    //     "iconPath": "path/to/icon/sort.png",
-    //     "selectedIconPath": "path/to/icon/sort_selected.png",
-    //     "pagePath": "pages/goods/category/index",
-    //     "text": language.tabBar.category
-    //   },
-    //   {
-    //     "iconPath": "path/to/icon/cart.png",
-    //     "selectedIconPath": "path/to/icon/cart_selected.png",
-    //     "pagePath": "pages/cart/index",
-    //     "text": language.tabBar.cart
-    //   },
-    //   {
-    //     "iconPath": "path/to/icon/person.png",
-    //     "selectedIconPath": "path/to/icon/person_selected.png",
-    //     "pagePath": "pages/usercenter/index",
-    //     "text": language.tabBar.user
-    //   }
-    // ];
-    // wx.setTabBarItem({
-    //   index: 0,
-    //   text: tabBarList[0].text
-    // });
-    // wx.setTabBarItem({
-    //   index: 1,
-    //   text: tabBarList[1].text
-    // });
-    // wx.setTabBarItem({
-    //   index: 2,
-    //   text: tabBarList[2].text
-    // });
-    // wx.setTabBarItem({
-    //   index: 3,
-    //   text: tabBarList[3].text
-    // });
   },
   updateNavigationBar: function () {
     const language = this.globalData.language;
@@ -96,5 +54,40 @@ App({
       });
     }
   },
-  
+
+  emitLanguageChange: function () {
+    const eventChannel = this.eventChannel;
+    if (eventChannel) {
+      eventChannel.emit('languageChanged', this.globalData.language);
+    }
+  },
+  onLanguageChange: function(callback) {
+    const eventChannel = this.eventChannel || wx.createEventChannel();
+    this.eventChannel = eventChannel;
+    eventChannel.on('languageChanged', callback);
+  },
+  createEventBus: function() {
+    const events = {};
+    return {
+      on(event, listener) {
+        if (!events[event]) {
+          events[event] = [];
+        }
+        events[event].push(listener);
+      },
+      emit(event, data) {
+        if (events[event]) {
+          events[event].forEach(listener => listener(data));
+        }
+      },
+      off(event, listener) {
+        if (events[event]) {
+          const index = events[event].indexOf(listener);
+          if (index > -1) {
+            events[event].splice(index, 1);
+          }
+        }
+      }
+    };
+  },
 });

@@ -1107,8 +1107,6 @@ const orderResps = [
           originPrice: '40000',
           actualPrice: '29800',
           specifications: [
-            { specTitle: '颜色', specValue: '米色荷叶边' },
-            { specTitle: '尺码', specValue: 'M' },
           ],
           buyQuantity: 1,
           itemTotalAmount: '29800',
