@@ -60,6 +60,8 @@ page {
   width: 45%; /* 根据需要调整宽度 */
   flex: 1;
   border-radius: 30rpx;
+  /* box-shadow: 0 0 10rpx rgba(0, 0, 0, 0.2); 四面均匀的阴影效果 */
+  backdrop-filter: blur(10rpx); /* 背景边缘模糊 */
 }
 .category-title {
   text-align: center;
@@ -88,6 +90,85 @@ page {
   margin-top: 10rpx;
   margin-bottom: 10rpx;
 }
+
+/* 常用推荐区域式样 */
+.home-recommended-products{
+  position: relative; /* 设置相对定位 */
+  height: auto; /* 根据内容自适应高度 */
+  padding: 20rpx; /* 根据需要调整内边距 */
+  background-color: #E5F1FA; /* 父view背景颜色 */
+  border-radius: 15px;
+}
+
+.recommended-button-container {
+  position: absolute; /* 设置绝对定位 */
+  top: 20rpx; /* 按钮容器距离顶部的距离 */
+  left: 50%; /* 按钮容器左侧距离屏幕左侧的距离 */
+  transform: translateX(-50%); /* 水平居中 */
+}
+
+.recommended-btn {
+  background-color: #3498db; /* 按钮背景颜色 */
+  color: #ffffff; /* 按钮文字颜色 */
+  border: none; /* 去除按钮边框 */
+  border-radius: 35rpx; /* 按钮圆角 */
+  font-size: 18rpx; /* 按钮文字大小 */
+  outline: none; /* 去除按钮点击时的阴影效果 */
+}
+
+.recommended-items-container {
+  display: flex; /* 使用Flex布局 */
+  justify-content: space-around; /* 子view之间平均分布 */
+  align-items: center; /* 垂直居中对齐 */
+  margin-top: 70rpx; /* 子view容器与按钮容器之间的垂直间距 */
+}
+
+.recommended-item {
+  width: 30%; /* 子view宽度 */
+  background-color: #ffffff; /* 子view背景颜色 */
+  text-align: left; /* 文字居中 */
+  border-radius: 10rpx; /* 圆角 */
+}
+
+.item-content {
+  display: flex; /* 使用Flex布局 */
+  flex-direction: column; /* 垂直方向排列 */
+  justify-content: center; /* 垂直居中对齐 */
+  align-items: center; /* 水平居中对齐 */
+  padding: 20rpx; /* 根据需要调整内边距 */
+}
+
+.item-image {
+  width: 100%; /* 图像宽度100% */
+  height: 150rpx; /* 图像高度 */
+  border-radius: 10rpx; /* 图像圆角 */
+}
+
+.item-label-title {
+  margin-top: 4rpx; 
+  font-size: 20rpx;
+  color:#086CD0;
+}
+
+.item-label-price{
+  margin-top: 4rpx; 
+  font-size: 24rpx;
+  color:#FF4500;
+  width: 100%;
+}
+
+.add-cart-button {
+  display: flex;
+  align-items: center;
+  margin-left: 0;
+  margin-top: 10rpx;
+  background-color: #076CD0; /* 蓝色背景 */
+  color: #ffffff; /* 白色字体 */
+  border: none;
+  border-radius: 30rpx; /* 圆角 */
+  font-size: 14rpx;
+}
+
 
 
 .home-page-container .t-tabs {

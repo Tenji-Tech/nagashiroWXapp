@@ -8,7 +8,8 @@ App({
   },
 
   onLaunch: function () {
-    const language = wx.getStorageSync('language') || 'zh';
+    //默认语言设置为日语，并存储到本地
+    const language = wx.getStorageSync('language') || 'jp';
     this.loadLanguage(language);
     this.globalData.eventBus = this.createEventBus();
   },
@@ -18,7 +19,6 @@ App({
   },
 
   loadLanguage: function (lang) {
-    console.log('app.js: loadLanguage')
     const that = this;
     try {
       const languageData = require(`./i18n/${lang}.js`);
