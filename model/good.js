@@ -34,18 +34,19 @@ console.log("allGoods:",allGoods);
  * @param {number} [available] 库存, 默认1
  */
 export function genGood(id, available = 1) {
-  const specID = ['135681624', '135681628'];
-  if (specID.indexOf(id) > -1) {
-    return allGoods.filter((good) => good.spuId === id)[0];
+  // const specID = ['135681624', '135681628'];
+  
+  if (id > 0) {
+    return allGoods.filter((good) => String(good.spuId) === String(id) )[0];
+  } else if(id.length > 0) {
+    return allGoods.filter((good) => String(good.spuId) === String(id))[0];
+  } else {
+    const real_index = (id * -1) % allGoods.length
+    const item = allGoods[real_index];
+    console.log("genGood:id:",id, real_index,item)
+    return item
   }
-  const item = allGoods[id % allGoods.length];
-  return {
-    ...item,
-    spuId: `${id}`,
-    available: available,
-    desc: item?.desc || defaultDesc,
-    images: item?.images || [item?.primaryImage],
-  };
+  
 }
 
 export function filterGoodsByCategories(cats) {

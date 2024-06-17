@@ -311,7 +311,9 @@ Page({
   },
 
   getDetail(spuId) {
-    Promise.all([fetchGood(spuId), fetchActivityList()]).then((res) => {
+    Promise.all(
+      [fetchGood(spuId), fetchActivityList()]
+    ).then((res) => {
       const [details, activityList] = res;
       const skuArray = [];
       const {
@@ -323,6 +325,7 @@ Page({
         maxLinePrice,
         soldNum,
       } = details;
+      console.log("fetchGood:",details, skuList)
       skuList.forEach((item) => {
         skuArray.push({
           skuId: item.skuId,
