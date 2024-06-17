@@ -7,7 +7,7 @@
     <t-search
       t-class-input="t-search__input"
       t-class-input-container="t-search__input-container"
-      placeholder="北海道三文鱼"
+      placeholder="北海道産サーモン"
       leftIcon=""
       disabled
     >
@@ -34,35 +34,61 @@
   <view class="category">
     <view class="category-item category-sea" bindtap="navigateToGoodsList">
       <image src="/images/home_seasonal_seafood.png" class="category-image" />
-      <text class="category-title">季节海产</text>
+      <text class="category-title">季節の海産物</text>
     </view>
     <view class="category-item category-veg" bindtap="navigateToGoodsList">
       <image src="/images/home_seasonal_vegetables.png" class="category-image" />
-      <text class="category-title">时令蔬菜</text>
+      <text class="category-title">季節の野菜</text>
     </view>
   </view>
 </view>
 
-<view class="home-page-container">
-  <!-- <view class="home-page-tabs">
-    <t-tabs
-      t-class="t-tabs"
-      t-class-active="tabs-external__active"
-      t-class-item="tabs-external__item"
-      defaultValue="{{0}}"
-      space-evenly="{{false}}"
-      bind:change="tabChangeHandle"
-    >
-      <t-tab-panel
-        wx:for="{{tabList}}"
-        wx:for-index="index"
-        wx:key="index"
-        label="{{item.text}}"
-        value="{{item.key}}"
-      />
-    </t-tabs>
-  </view> -->
+<!-- 常购推荐 -->
+<view class="home-page-header">
+  <view class="home-recommended-products">
+    <view class="recommended-button-container">
+      <button class="recommended-btn">定番のおすすめ</button>
+    </view>
+    <view class="recommended-items-container">
+      <view class="recommended-item">
+        <!-- 第一个子视图内容 -->
+        <view class="item-content">
+          <image src="/images/home/recommended/001.png" class="item-image" mode="aspectFit"></image>
+          <text class="item-label-title">冷凍されたカットされたサバ</text>
+          <text class="item-label-price">JP¥ 1,398</text>
+          <button class="add-cart-button">
+            <text class="button-text">カートに入れる</text>
+          </button>
+        </view>
+      </view>
+      <view class="recommended-item">
+        <!-- 第二个子视图内容 -->
+        <view class="item-content">
+          <image src="/images/home/recommended/002.png" class="item-image" mode="aspectFit"></image>
+          <text class="item-label-title">北海道産のホタテ貝</text>
+          <text class="item-label-price">JP¥ 2,460</text>
+          <button class="add-cart-button">
+            <text class="button-text">カートに入れる</text>
+          </button>
+        </view>
+      </view>
+      <view class="recommended-item">
+        <!-- 第三个子视图内容 -->
+        <view class="item-content">
+          <image src="/images/home/recommended/003.png" class="item-image" mode="aspectFit"></image>
+          <text class="item-label-title">冷凍された白身魚の切り身</text>
+          <text class="item-label-price">JP¥ 1,691</text>
+          <button class="add-cart-button">
+            <text class="button-text">カートに入れる</text>
+          </button>
+        </view>
+      </view>
+    </view>
+</view>
+</view>
 
+<!-- 商品区域 -->
+<view class="home-page-container">
   <goods-list
     wr-class="goods-list-container"
     goodsList="{{goodsList}}"

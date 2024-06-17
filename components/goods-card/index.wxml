@@ -39,32 +39,19 @@
 				  symbol-class="spec-for-symbol"
 				  symbol="{{currency}}"
 				  price="{{goods.price}}"
-				/>
-				<!-- <price
-				  wx:if="{{ goods.originPrice && isValidityLinePrice }}"
-				  wr-class="goods-card__origin-price"
-				  symbol="{{currency}}"
-				  price="{{goods.originPrice}}"
-				  type="delthrough"
-				/> -->
-				<!-- <t-icon
-				  class="goods-card__add-cart"
-				  prefix="wr"
-				  name="cartAdd"
-				  id="{{independentID}}-cart"
-				  data-id="{{independentID}}"
-				  catchtap="addCartHandle"
-				  size="48rpx"
-				  color="#086CD0"
-				/> -->
-				<image
+        />
+				<!-- <image
 					src="/images/add2cart.png"
 				  class="goods-card__add-cart"
 				  id="{{independentID}}-cart"
 				  data-id="{{independentID}}"
 				  catchtap="addCartHandle"
 					style="width: 130rpx; height: 32rpx;"
-				/>
+        /> -->
+        <button class="add-cart-button">
+          <image src="/images/icons/add.png" class="icon"></image>
+          <text class="button-text">カートに入れる</text>
+        </button>
 			</view>
 		</view>
 	</view>
