@@ -4,8 +4,12 @@ import { config } from '../../config/index';
 function mockFetchGoodsList(pageIndex = 1, pageSize = 20) {
   const { delay } = require('../_utils/delay');
   const { getGoodsList } = require('../../model/goods');
-  return delay().then(() =>
-    getGoodsList(pageIndex, pageSize).map((item) => {
+
+  return delay().then(() => {
+    const fetchResult = getGoodsList(pageIndex, pageSize);
+    console.log("fetchResult:", fetchResult);
+
+    return fetchResult.map((item) => {
       return {
         spuId: item.spuId,
         thumb: item.primaryImage,
@@ -17,8 +21,8 @@ function mockFetchGoodsList(pageIndex = 1, pageSize = 20) {
         originPrice: item.maxLinePrice,
         tags: item.spuTagList.map((tag) => tag.title),
       };
-    }),
-  );
+    });
+  });
 }
 
 /** 获取商品列表 */

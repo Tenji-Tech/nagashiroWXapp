@@ -18,7 +18,7 @@ Page({
   },
 
   goodListPagination: {
-    index: 0,
+    index: 1,
     num: 20,
   },
 
@@ -96,6 +96,7 @@ Page({
       wx.pageScrollTo({
         scrollTop: 0,
       });
+      this.goodListPagination.index = 1; // Reset pagination index for fresh load
     }
 
     this.setData({ goodsListLoadStatus: 1 });
@@ -110,13 +111,22 @@ Page({
       const nextList = await fetchGoodsList(pageIndex, pageSize);
       this.setData({
         goodsList: fresh ? nextList : this.data.goodsList.concat(nextList),
-        goodsListLoadStatus: 0,
+        // goodsListLoadStatus: 0,
+        goodsListLoadStatus: nextList.length < pageSize ? 2 : 0, // 2 indicates no more data
       });
-
-      this.goodListPagination.index = pageIndex;
+      if (nextList.length > 0) {
+        this.goodListPagination.index += nextList.length; // Increment pagination index
+      }
+      // this.goodListPagination.index = pageIndex;
       this.goodListPagination.num = pageSize;
     } catch (err) {
+      console.error(err);
       this.setData({ goodsListLoadStatus: 3 });
+      Toast({
+        context: this,
+        selector: '#t-toast',
+        message: '加载商品列表失败，请重试',
+      });
     }
   },
 
