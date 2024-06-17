@@ -48,14 +48,14 @@ export function getSearchPopular() {
 }
 
 
-export function getSearchResult() {
+export function getSearchResult(params) {
   return {
     saasId: null,
     storeId: null,
     pageNum: 1,
     pageSize: 30,
     totalCount: 1,
-    spuList: getGoodsList(7),
+    spuList: getGoodsList( 7, 10, params.cats ),
     algId: 0,
   };
 }

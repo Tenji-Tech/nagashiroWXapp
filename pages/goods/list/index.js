@@ -20,6 +20,7 @@ Page({
     hasLoaded: false,
     loadMoreStatus: 0,
     loading: true,
+    cats: [],
   },
 
   pageNum: 1,
@@ -47,6 +48,7 @@ Page({
       pageNum: 1,
       pageSize: 30,
       keyword: keywords,
+      cats: this.data.cats,
     };
 
     if (sorts) {
@@ -124,8 +126,18 @@ Page({
     });
   },
 
-  onLoad() {
+  onLoad(options) {
+
+    if(options.cats) {
+      const catsArray = options.cats.split(',');
+      console.log(catsArray); // ['A1', 'B3', 'Z2']
+      this.setData({
+        cats: catsArray,
+      });
+    }
+
     this.init(true);
+
   },
 
   onReachBottom() {

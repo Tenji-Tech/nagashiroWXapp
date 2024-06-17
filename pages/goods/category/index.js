@@ -17,9 +17,11 @@ Page({
   onShow() {
     this.getTabBar().init();
   },
-  onChange() {
+  onChange(event) {
+    const good_detail = event.detail.item
+    console.log('Category: onChange: ', good_detail.groupId, good_detail )
     wx.navigateTo({
-      url: '/pages/goods/list/index',
+      url: '/pages/goods/list/index?cats=' + good_detail.groupId,
     });
   },
   onLoad() {

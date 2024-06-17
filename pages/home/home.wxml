@@ -32,11 +32,11 @@
 <!-- 首页内容 -->
 <view class="home-page-header">
   <view class="category">
-    <view class="category-item category-sea" bindtap="navigateToGoodsList">
+    <view class="category-item category-sea" bindtap="navigateToSeasonSeaFoods">
       <image src="/images/home_seasonal_seafood.png" class="category-image" />
       <text class="category-title">季节海产</text>
     </view>
-    <view class="category-item category-veg" bindtap="navigateToGoodsList">
+    <view class="category-item category-veg" bindtap="navigateToSeasonVegetables">
       <image src="/images/home_seasonal_vegetables.png" class="category-image" />
       <text class="category-title">时令蔬菜</text>
     </view>

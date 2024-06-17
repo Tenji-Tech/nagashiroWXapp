@@ -74,7 +74,19 @@ Page({
       url: '/pages/goods/list/index'
     });
   },
-  
+  navigateToSeasonSeaFoods() {
+    const cats = 'Z1,Z2,Z3';
+    wx.navigateTo({
+      url: '/pages/goods/list/index?cats=' + cats
+    });
+  },
+  navigateToSeasonVegetables() {
+    const cats = 'Z4,Z5';
+    wx.navigateTo({
+      url: '/pages/goods/list/index?cats=' + cats
+    });
+  },
+
   onReTry() {
     this.loadGoodsList();
   },

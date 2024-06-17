@@ -1126,3 +1126,17 @@ export function genGood(id, available = 1) {
     images: item?.images || [item?.primaryImage],
   };
 }
+
+export function filterGoodsByCategories(cats) {
+  const filteredGoods = allGoods.filter(good => {
+    // 判断 good.categoryIds 和 cats 是否有交集
+    return good.categoryIds.some(categoryId => cats.includes(categoryId));
+  });
+  // 根据 spuId 去重
+  const uniqueSpuIds = new Set(filteredGoods.map(good => good.spuId));
+  const uniqueGoods = Array.from(uniqueSpuIds).map(spuId => 
+    filteredGoods.find(good => good.spuId === spuId)
+  );
+  console.log("filterGoodsByCategories:", uniqueGoods);
+  return uniqueGoods;
+}
