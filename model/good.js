@@ -1,22 +1,13 @@
 import { cdnBase } from '../config/index';
 
-// import goodsA from './goodsDataA.js';
-// import goodsB from './goodsDataB';
-// import goodsC from './goodsDataC';
-// import goodsD from './goodsDataD';
-// import goodsE from './goodsDataE';
-// import goodsF from './goodsDataF';
-// import goodsG from './goodsDataG';
-// import goodsZ from './goodsDataZ';
-
 const goodsA = require('goodsDataA.js');
 const goodsB = require('goodsDataB.js');
-// const goodsC = require('./goodsDataC');
-// const goodsD = require('./goodsDataD');
-// const goodsE = require('./goodsDataE');
-// const goodsF = require('./goodsDataF');
-// const goodsG = require('./goodsDataG');
-// const goodsZ = require('./goodsDataZ');
+const goodsC = require('goodsDataC.js');
+const goodsD = require('goodsDataD.js');
+const goodsE = require('goodsDataE.js');
+const goodsF = require('goodsDataF.js');
+const goodsG = require('goodsDataG.js');
+const goodsZ = require('goodsDataZ.js');
 
 const imgPrefix = cdnBase;
 
@@ -27,16 +18,15 @@ const defaultDesc = [`${imgPrefix}/goods/details-1.png`];
 const allGoods = [
   ...goodsA.default,
   ...goodsB.default,
-  // ...goodsC,
-  // ...goodsD,
-  // ...goodsE,
-  // ...goodsF,
-  // ...goodsG,
-  // ...goodsZ,
+  ...goodsC.default,
+  ...goodsD.default,
+  ...goodsE.default,
+  ...goodsF.default,
+  ...goodsG.default,
+  ...goodsZ.default,
 ];
 
 console.log("allGoods:",allGoods);
-console.log("goodsA:",goodsA);
 
 
 /**
