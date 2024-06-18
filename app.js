@@ -8,8 +8,8 @@ App({
   },
 
   onLaunch: function () {
-    //默认语言设置为日语，并存储到本地
-    const language = wx.getStorageSync('language') || 'jp';
+    //默认语言设置为汉语，并存储到本地
+    const language = wx.getStorageSync('language') || 'zh';
     this.loadLanguage(language);
     this.globalData.eventBus = this.createEventBus();
   },

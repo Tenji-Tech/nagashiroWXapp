@@ -1,7 +1,7 @@
 const userInfo = {
   avatarUrl:
     '/images/nagashiro_logo.jpg',
-  nickName: '管理账户 🌟',
+  nickName: '管理账户',
   phoneNumber: '13438358888',
   gender: 2,
 };

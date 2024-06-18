@@ -138,17 +138,17 @@
           <view class="pay-item__right__copy">查看</view>
         </view>
       </view>
-      <view class="pay-item">
-        <text>备注</text>
-        <view class="pay-item__right">
-          <text class="order-no normal-color">{{order.remark || '-'}}</text>
-        </view>
-      </view>
+<!--      <view class="pay-item">-->
+<!--        <text>备注</text>-->
+<!--        <view class="pay-item__right">-->
+<!--          <text class="order-no normal-color">{{order.remark || '-'}}</text>-->
+<!--        </view>-->
+<!--      </view>-->
       <view class="border-bottom border-bottom-margin" />
-      <view class="pay-service" wx:if="{{storeDetail && storeDetail.storeTel}}" catch:tap="clickService">
-        <t-icon name="service" size="40rpx" />
-        <text decode="{{true}}">&nbsp;联系客服</text>
-      </view>
+<!--      <view class="pay-service" wx:if="{{storeDetail && storeDetail.storeTel}}" catch:tap="clickService">-->
+<!--        <t-icon name="service" size="40rpx" />-->
+<!--        <text decode="{{true}}">&nbsp;联系客服</text>-->
+<!--      </view>-->
     </view>
   </view>
   <view wx:if="{{_order.buttons.length > 0}}" class="bottom-bar">

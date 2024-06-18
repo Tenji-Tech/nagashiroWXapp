@@ -111,6 +111,17 @@
   height: 2rpx;
   background-color: #e6e6e6;
 }
+
+.cart-group .goods-item{
+  padding-top: 30rpx;
+  width: 95%;
+  margin-left: 2.5%;
+  margin-top: 20rpx;
+  border: 6rpx solid rgba(25, 128, 216, 0.2);
+  border-radius: 20rpx;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
 .cart-group .goods-item-info {
   display: flex;
   background-color: #fff;
@@ -131,25 +142,28 @@
 }
 
 .cart-group .goods-item-info .goods-sku-info {
-  padding: 0rpx 32rpx 40rpx 0;
+  padding: 0 32rpx 40rpx 0;
   flex-grow: 1;
 }
+
 .cart-group .goods-item-info .goods-sku-info .stock-mask {
   position: absolute;
   color: #fff;
   font-size: 24rpx;
-  bottom: 0rpx;
+  bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 40rpx;
   line-height: 40rpx;
   text-align: center;
 }
+
 .cart-group .goods-item-info .goods-sku-info .goods-stepper {
   position: absolute;
   right: 0;
   bottom: 8rpx;
 }
+
 .cart-group .goods-item-info .goods-sku-info .goods-stepper .stepper-tip {
   position: absolute;
   top: -36rpx;
@@ -166,9 +180,11 @@
   background-color: #e6e6e6;
   margin: 0 auto;
 }
+
 .cart-group .shortage-goods-wrap {
   background-color: #fff;
 }
+
 .cart-group .shortage-goods-wrap .shortage-tip-title {
   height: 72rpx;
   line-height: 72rpx;
@@ -176,14 +192,17 @@
   font-size: 24rpx;
   color: #999;
 }
+
 .stepper-info {
   margin-left: auto;
 }
+
 .invalid-goods-wrap {
   background-color: #fff;
   border-radius: 8rpx;
   margin-top: 40rpx;
 }
+
 .invalid-goods-wrap .invalid-head {
   display: flex;
   justify-content: space-between;
@@ -191,14 +210,17 @@
   font-size: 24rpx;
   border-bottom: 2rpx solid #f6f6f6;
 }
+
 .invalid-goods-wrap .invalid-head .invalid-title {
   color: #333;
   font-size: 28rpx;
   font-weight: 600;
 }
+
 .invalid-goods-wrap .invalid-head .invalid-clear {
   color: #086CD0;
 }
+
 .invalid-goods-wrap .toggle {
   display: flex;
   height: 80rpx;
@@ -207,9 +229,11 @@
   font-size: 24rpx;
   color: #086CD0;
 }
+
 .invalid-goods-wrap .toggle .m-r-6 {
   margin-right: 6rpx;
 }
+
 .invalid-goods-wrap .toggle .top-icon {
   display: inline-block;
   width: 0;
@@ -218,6 +242,7 @@
   border-right: 10rpx solid transparent;
   border-bottom: 10rpx solid #086CD0;
 }
+
 .invalid-goods-wrap .toggle .down-icon {
   display: inline-block;
   width: 0;
@@ -226,14 +251,17 @@
   border-right: 10rpx solid transparent;
   border-top: 10rpx solid #086CD0;
 }
+
 .action-btn {
   display: flex;
   align-items: center;
 }
+
 .action-btn .action-btn-arrow {
   font-size: 20rpx;
   margin-left: 8rpx;
 }
+
 .action-btn--active {
   opacity: 0.5;
 }

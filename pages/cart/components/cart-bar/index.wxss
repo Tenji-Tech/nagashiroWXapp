@@ -36,24 +36,36 @@
   margin-right: 12rpx;
 }
 
+.checkAll-text{
+  font-size: 28rpx;
+  color: #024E9A;
+}
+
+.cart-bar .cart-bar__total--area{
+  float: right;
+  margin-right: 30rpx;
+}
+
 .cart-bar .cart-bar__total {
   margin-left: 24rpx;
 }
 
 .cart-bar .account-btn {
-  width: 192rpx;
-  height: 80rpx;
+  width: 160rpx;
+  height: 60rpx;
   border-radius: 40rpx;
-  background-color: #086CD0;
+  background-color: #FE5800;
   font-size: 28rpx;
   font-weight: bold;
-  line-height: 80rpx;
+  line-height: 60rpx;
   color: #ffffff;
   text-align: center;
 }
+
 .cart-bar .disabled-btn {
   background-color: #cccccc !important;
 }
+
 .cart-bar .hover-btn {
   opacity: 0.5;
 }
@@ -61,9 +73,10 @@
 .cart-bar__total .cart-bar__total--bold {
   font-size: 28rpx;
   line-height: 40rpx;
-  color: #333;
-  font-weight: bold;
+  color: #024E9A;
+  margin-right: 20rpx;
 }
+
 .cart-bar__total .cart-bar__total--normal {
   font-size: 24rpx;
   line-height: 32rpx;
@@ -71,7 +84,8 @@
 }
 
 .cart-bar__total .cart-bar__total--price {
-  color: #086CD0;
+  font-size: 28rpx;
+  color: #FE5800;
   font-weight: bold;
 }
 

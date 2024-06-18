@@ -77,13 +77,13 @@ Page({
   navigateToSeasonSeaFoods() {
     const cats = 'Z1,Z2,Z3';
     wx.navigateTo({
-      url: '/pages/goods/list/index?cats=' + cats
+      url: '/pages/goods/list/index?cats=' + cats + '&title=' + '季节海产'
     });
   },
   navigateToSeasonVegetables() {
     const cats = 'Z4,Z5';
     wx.navigateTo({
-      url: '/pages/goods/list/index?cats=' + cats
+      url: '/pages/goods/list/index?cats=' + cats + '&title=' + '时令蔬菜'
     });
   },
 

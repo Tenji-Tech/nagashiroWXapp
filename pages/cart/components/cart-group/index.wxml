@@ -3,10 +3,11 @@
 
 <view class="cart-group">
   <view class="goods-wrap" wx:for="{{_storeGoods}}" wx:for-item="store" wx:for-index="si" wx:key="storeId">
+    <!-- 店铺名称 -->
     <view class="cart-store">
       <t-icon
         size="40rpx"
-        color="{{store.isSelected ? '#086CD0' : '#BBBBBB'}}"
+        color="{{store.isSelected ? '#086CD0' : '#00578E'}}"
         name="{{store.isSelected ? 'check-circle-filled' : 'circle'}}"
         class="cart-store__check"
         bindtap="selectStore"
@@ -14,29 +15,13 @@
       />
       <view class="cart-store__content">
         <view class="store-title">
-          <t-icon prefix="wr" size="40rpx" color="#333333" name="store" />
+          <t-icon prefix="wr" size="40rpx" color="" name="store" />
           <view class="store-name">{{store.storeName}}</view>
         </view>
-        <!-- <view class="get-coupon" catch:tap="gotoCoupons">优惠券</view> -->
       </view>
     </view>
+
     <block wx:for="{{store.promotionGoodsList}}" wx:for-item="promotion" wx:for-index="promoindex" wx:key="promoindex">
-      <!-- <view
-        class="promotion-wrap"
-        wx:if="{{handlePromotion.hasPromotion(promotion.promotionCode)}}"
-        bindtap="gotoBuyMore"
-        data-promotion="{{promotion}}"
-        data-store-id="{{store.storeId}}"
-      > -->
-        <!-- <view class="promotion-title">
-          <view class="promotion-icon">{{promotion.tag}}</view>
-          <view class="promotion-text">{{promotion.description}}</view>
-        </view> -->
-        <!-- <view class="promotion-action action-btn" hover-class="action-btn--active">
-          <view class="promotion-action-label"> {{promotion.isNeedAddOnShop == 1 ? '去凑单' : '再逛逛'}} </view>
-          <t-icon name="chevron-right" size="32rpx" color="#BBBBBB" />
-        </view> -->
-      <!-- </view> -->
       <view
         class="goods-item"
         wx:for="{{promotion.goodsPromotionList}}"
@@ -49,7 +34,7 @@
             <view class="check-wrap" catchtap="selectGoods" data-goods="{{goods}}">
               <t-icon
                 size="40rpx"
-                color="{{goods.isSelected ? '#086CD0' : '#BBBBBB'}}"
+                color="{{goods.isSelected ? '#086CD0' : '#00578E'}}"
                 name="{{goods.isSelected ? 'check-circle-filled' : 'circle'}}"
                 class="check"
               />
@@ -97,6 +82,7 @@
         <view class="promotion-line" />
       </view>
     </block>
+
     <block wx:if="{{store.shortageGoodsList.length>0}}">
       <view
         class="goods-item"
@@ -139,6 +125,7 @@
     </block>
   </view>
 </view>
+
 <specs-popup
   show="{{isShowSpecs}}"
   title="{{currentGoods.title || ''}}"

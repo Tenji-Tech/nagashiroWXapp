@@ -1,33 +1,51 @@
 page {
-  background-color: #fff;
+  background-color: #FFFFFF;
 }
 
 .goods-list-container {
   display: block;
 }
 
-.goods-list-container .t-search {
-  padding: 0 30rpx;
-  background-color: #fff;
+/* 搜索框式样 */
+.search-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 5px 0;
+  background-color: #ffffff;
 }
 
-.goods-list-container .t-class__input-container {
-  height: 64rpx !important;
-  border-radius: 32rpx !important;
-}
-
-.goods-list-container .t-search__left-icon {
+.search-wrapper {
   display: flex;
   align-items: center;
+  width: 85%;
+  background-color: white;
+  border: 1px solid #00578E;
+  border-radius: 20px;
+  padding: 5px 10px;
 }
 
-.goods-list-container .t-search__input {
-  font-size: 28rpx !important;
-  color: rgb(116, 116, 116) !important;
+.search-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 14px;
+}
+
+/* 设置占位文字的颜色 */
+.search-input::placeholder {
+  color: #00578E;
 }
 
 .goods-list-container .category-goods-list {
-  background-color: #f2f2f2;
+  background-color: #FFFFFF;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
   padding: 20rpx 24rpx;
@@ -35,7 +53,7 @@ page {
 }
 
 .goods-list-container .wr-goods-list {
-  background: #f2f2f2 !important;
+  background: #FFFFFF !important;
 }
 
 .goods-list-container .t-image__mask {

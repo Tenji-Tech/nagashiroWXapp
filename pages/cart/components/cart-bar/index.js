@@ -12,7 +12,7 @@ Component({
     },
     totalAmount: {
       type: Number,
-      value: 1,
+      value: 0
     },
     totalGoodsNum: {
       type: Number,
@@ -36,6 +36,7 @@ Component({
     },
     fixed: Boolean,
   },
+
   data: {
     isDisabled: false,
   },
@@ -54,6 +55,6 @@ Component({
     handleToSettle() {
       if (this.data.isDisabled) return;
       this.triggerEvent('handleToSettle');
-    },
+    }
   },
 });

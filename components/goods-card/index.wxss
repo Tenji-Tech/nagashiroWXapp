@@ -4,7 +4,7 @@
   font-size: 24rpx;
   border-radius: 30rpx 30rpx 30rpx 30rpx;
   border-bottom: none;
-  box-shadow: 0 4px 8px #1980D840;
+  box-shadow: 0 0 10px #1980D840;
 }
 
 .goods-card__main {
@@ -79,15 +79,15 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 0rpx 0 0 0;
+  margin: 0 0 0 0;
 }
 
 .goods-card__tag {
   color: #086CD0;
   background: transparent;
   font-size: 20rpx;
-  border: 0rpx solid #086CD0;
-  padding: 0 0rpx;
+  border: 0 solid #086CD0;
+  padding: 0 0;
   border-radius: 16rpx;
   line-height: 30rpx;
   margin: 0 10rpx 10rpx 0;
@@ -152,12 +152,14 @@
   text-align: left; /* 文本左对齐 */
 }
 
+/* 按钮前部加号式样 */
 .icon {
   width: 16rpx;
   height: 16rpx;
   margin-right: 10rpx;
 }
 
+/* 加入购物车按钮式样 */
 .add-cart-button {
   display: flex;
   align-items: center;

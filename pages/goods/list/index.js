@@ -27,6 +27,10 @@ Page({
   pageSize: 30,
   total: 0,
 
+  navToSearchPage() {
+    wx.navigateTo({ url: '/pages/goods/search/index' });
+  },
+
   handleFilterChange(e) {
     const { layout, overall, sorts } = e.detail;
     this.pageNum = 1;
@@ -127,7 +131,6 @@ Page({
   },
 
   onLoad(options) {
-
     if(options.cats) {
       const catsArray = options.cats.split(',');
       console.log(catsArray); // ['A1', 'B3', 'Z2']
@@ -136,8 +139,13 @@ Page({
       });
     }
 
+    if(options.title) {
+      // 设置页面标题
+      wx.setNavigationBarTitle({
+        title: options.title
+      });
+    }
     this.init(true);
-
   },
 
   onReachBottom() {

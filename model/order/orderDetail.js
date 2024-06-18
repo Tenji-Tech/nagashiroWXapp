@@ -24,7 +24,7 @@ const orderResps = [
       channelType: 0,
       channelSource: '',
       channelIdentity: '',
-      remark: '买电风扇送电池吗',
+      remark: '',
       cancelType: 0,
       cancelReasonType: 0,
       cancelReason: '',
@@ -163,9 +163,9 @@ const orderResps = [
           roomId: null,
           goodsMainType: 0,
           goodsViceType: 0,
-          goodsName: '白色短袖连衣裙荷叶边裙摆宽松韩版休闲纯白清爽优雅连衣裙',
+          goodsName: '養殖サバ',
           goodsPictureUrl:
-            'https://cdn-we-retail.ym.tencent.com/tsr/goods/nz-09a.png',
+            'cloud://nagashiro-7gx3ygvt2a49505e.6e61-nagashiro-7gx3ygvt2a49505e-1327079852/images/goods_demo_rename/A/A1/01.jpg',
           originPrice: '40000',
           actualPrice: '29800',
           specifications: [
@@ -198,14 +198,14 @@ const orderResps = [
           goodsMainType: 0,
           goodsViceType: 0,
           goodsName:
-            '不锈钢刀叉勺套装家用西餐餐具ins简约耐用不锈钢金色银色可选',
+            'ウニ',
           goodsPictureUrl:
-            'https://cdn-we-retail.ym.tencent.com/tsr/goods/gh-2b.png',
+            'cloud://nagashiro-7gx3ygvt2a49505e.6e61-nagashiro-7gx3ygvt2a49505e-1327079852/images/goods_demo_rename/A/A7/01.jpg',
           originPrice: '29900',
           actualPrice: '19900',
           specifications: [
-            { specTitle: '颜色', specValue: '奶黄色' },
-            { specTitle: '类型', specValue: '三件套' },
+            // { specTitle: '颜色', specValue: '奶黄色' },
+            // { specTitle: '类型', specValue: '三件套' },
           ],
           buyQuantity: 1,
           itemTotalAmount: '19900',
@@ -227,9 +227,9 @@ const orderResps = [
           goodsMainType: 0,
           goodsViceType: 0,
           goodsName:
-            '纯色纯棉休闲圆领短袖T恤纯白亲肤厚柔软细腻面料纯白短袖套头T恤',
+            '本マグロ',
           goodsPictureUrl:
-            'https://cdn-we-retail.ym.tencent.com/tsr/goods/nz-08a.png',
+            'cloud://nagashiro-7gx3ygvt2a49505e.6e61-nagashiro-7gx3ygvt2a49505e-1327079852/images/goods_demo_rename/A/A3/01.jpg',
           originPrice: '31900',
           actualPrice: '26900',
           specifications: [
@@ -306,7 +306,7 @@ const orderResps = [
         {
           primary: true,
           type: 9,
-          name: '再次购买',
+          name: '再次下单',
         },
       ],
       labelVOs: null,
@@ -327,7 +327,7 @@ const orderResps = [
           code: '200002',
           nodes: [
             {
-              status: '订单已经支付成功，支付方式为：微信支付',
+              status: '下单成功，请等待发货',
               timestamp: '1600162877506',
               remark: null,
             },
@@ -388,7 +388,7 @@ const orderResps = [
       channelType: 0,
       channelSource: '',
       channelIdentity: '',
-      remark: '我是买一送一的，记得送',
+      remark: '',
       cancelType: 3,
       cancelReasonType: 0,
       cancelReason: '',
@@ -404,9 +404,9 @@ const orderResps = [
           goodsMainType: 0,
           goodsViceType: 0,
           goodsName:
-            '迷你便携高颜值蓝牙无线耳机立体声只能触控式操作简约立体声耳机',
+            '鱈白子',
           goodsPictureUrl:
-            'https://cdn-we-retail.ym.tencent.com/tsr/goods/dz-2a.png',
+            'cloud://nagashiro-7gx3ygvt2a49505e.6e61-nagashiro-7gx3ygvt2a49505e-1327079852/images/goods_demo_rename/A/A8/01.jpg',
           originPrice: '15900',
           actualPrice: '8900',
           specifications: [
@@ -438,9 +438,9 @@ const orderResps = [
           roomId: null,
           goodsMainType: 0,
           goodsViceType: 0,
-          goodsName: '白色短袖连衣裙荷叶边裙摆宽松韩版休闲纯白清爽优雅连衣裙',
+          goodsName: '養殖サバ',
           goodsPictureUrl:
-            'https://cdn-we-retail.ym.tencent.com/tsr/goods/nz-09a.png',
+            'cloud://nagashiro-7gx3ygvt2a49505e.6e61-nagashiro-7gx3ygvt2a49505e-1327079852/images/goods_demo_rename/A/A1/01.jpg',
           originPrice: '40000',
           actualPrice: '29800',
           specifications: [
@@ -473,9 +473,9 @@ const orderResps = [
           goodsMainType: 0,
           goodsViceType: 0,
           goodsName:
-            '腾讯极光盒子4智能网络电视机顶盒6K千兆网络机顶盒4K高分辨率',
+            '蓝鳍金枪鱼',
           goodsPictureUrl:
-            'https://cdn-we-retail.ym.tencent.com/tsr/goods/dz-3a.png',
+            'cloud://nagashiro-7gx3ygvt2a49505e.6e61-nagashiro-7gx3ygvt2a49505e-1327079852/images/goods_demo_rename/A/A3/01.jpg',
           originPrice: '16900',
           actualPrice: '9900',
           specifications: [
@@ -508,9 +508,9 @@ const orderResps = [
           goodsMainType: 0,
           goodsViceType: 0,
           goodsName:
-            '带帽午休毯虎年款多功能加厚加大加绒简约多功能午休毯连帽披肩',
+            '养殖鲭鱼',
           goodsPictureUrl:
-            'https://cdn-we-retail.ym.tencent.com/tsr/goods/muy-3a.png',
+            'cloud://nagashiro-7gx3ygvt2a49505e.6e61-nagashiro-7gx3ygvt2a49505e-1327079852/images/goods_demo_rename/A/A1/01.jpg',
           originPrice: '39900',
           actualPrice: '29900',
           specifications: [
@@ -542,9 +542,9 @@ const orderResps = [
           roomId: null,
           goodsMainType: 0,
           goodsViceType: 0,
-          goodsName: '运动连帽拉链卫衣休闲开衫长袖多色运动细绒面料运动上衣',
+          goodsName: '宽额大眼鲷',
           goodsPictureUrl:
-            'https://cdn-we-retail.ym.tencent.com/tsr/goods/nz-17a.png',
+            'cloud://nagashiro-7gx3ygvt2a49505e.6e61-nagashiro-7gx3ygvt2a49505e-1327079852/images/goods_demo_rename/A/A1/05.jpg',
           originPrice: '39900',
           actualPrice: '25900',
           specifications: [
@@ -727,9 +727,9 @@ const orderResps = [
           roomId: null,
           goodsMainType: 0,
           goodsViceType: 0,
-          goodsName: '白色短袖连衣裙荷叶边裙摆宽松韩版休闲纯白清爽优雅连衣裙',
+          goodsName: '宽额大眼鲷',
           goodsPictureUrl:
-            'https://cdn-we-retail.ym.tencent.com/tsr/goods/nz-09a.png',
+            'cloud://nagashiro-7gx3ygvt2a49505e.6e61-nagashiro-7gx3ygvt2a49505e-1327079852/images/goods_demo_rename/A/A1/05.jpg',
           originPrice: '40000',
           actualPrice: '29800',
           specifications: [
@@ -848,9 +848,9 @@ const orderResps = [
           goodsMainType: 0,
           goodsViceType: 0,
           goodsName:
-            '不锈钢刀叉勺套装家用西餐餐具ins简约耐用不锈钢金色银色可选',
+            'ウニ',
           goodsPictureUrl:
-            'https://cdn-we-retail.ym.tencent.com/tsr/goods/gh-2b.png',
+            'cloud://nagashiro-7gx3ygvt2a49505e.6e61-nagashiro-7gx3ygvt2a49505e-1327079852/images/goods_demo_rename/A/A7/01.jpg',
           originPrice: '29900',
           actualPrice: '19900',
           specifications: [
@@ -969,9 +969,9 @@ const orderResps = [
           goodsMainType: 0,
           goodsViceType: 0,
           goodsName:
-            '纯色纯棉休闲圆领短袖T恤纯白亲肤厚柔软细腻面料纯白短袖套头T恤',
+            '本マグロ',
           goodsPictureUrl:
-            'https://cdn-we-retail.ym.tencent.com/tsr/goods/nz-08b.png',
+            'cloud://nagashiro-7gx3ygvt2a49505e.6e61-nagashiro-7gx3ygvt2a49505e-1327079852/images/goods_demo_rename/A/A3/01.jpg',
           originPrice: '31900',
           actualPrice: '26900',
           specifications: [
@@ -1101,9 +1101,9 @@ const orderResps = [
           roomId: null,
           goodsMainType: 0,
           goodsViceType: 0,
-          goodsName: '白色短袖连衣裙荷叶边裙摆宽松韩版休闲纯白清爽优雅连衣裙',
+          goodsName: '養殖サバ',
           goodsPictureUrl:
-            'https://cdn-we-retail.ym.tencent.com/tsr/goods/nz-09a.png',
+            'cloud://nagashiro-7gx3ygvt2a49505e.6e61-nagashiro-7gx3ygvt2a49505e-1327079852/images/goods_demo_rename/A/A1/01.jpg',
           originPrice: '40000',
           actualPrice: '29800',
           specifications: [

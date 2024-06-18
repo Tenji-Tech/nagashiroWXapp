@@ -11,8 +11,11 @@
     <view class="user-center-card__header">
       <t-avatar image="{{userInfo.avatarUrl || defaultAvatarUrl}}" class="user-center-card__header__avatar" />
       <view class="" hover-class="none" hover-stop-propagation="false">
-        <view class="user-center-card__header__name">{{userInfo.nickName || '微信用户'}} 已认证</view>
-        <view class="user-center-card__header__email">vnox@qq.com</view>
+        <view class="user-center-card__header__name">
+          <text class="user-name-text">{{userInfo.nickName || '微信用户'}} </text>
+          <image class="confirm-status-icon" src="/images/icons/confirmed.png"></image>
+        </view>
+        <view class="user-center-card__header__email">test@gmail.com</view>
       </view>
 
       <!-- 需要授权用户信息，通过slot添加弹窗 -->
@@ -23,6 +26,7 @@
       <view class="user-center-card__header__transparent" bind:tap="gotoUserEditPage" wx:else></view>
     </view>
   </block>
+
   <!-- 已登录且已经授权用户信息的情况 -->
   <block wx:if="{{currAuthStep === AuthStepType.THREE}}">
     <view class="user-center-card__header" bind:tap="gotoUserEditPage">

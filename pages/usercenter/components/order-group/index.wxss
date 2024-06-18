@@ -15,14 +15,17 @@
 .order-group__top__note {
   font-size: 28rpx;
 }
+
 .order-group__content {
   overflow: hidden;
   width: 100%;
   height: 164rpx;
   display: flex;
   background-color: #fff;
-  border-radius: 0 0 16rpx 16rpx;
+  border: 5rpx solid #EDF6FC;
+  border-radius: 16rpx;
 }
+
 .order-group__item {
   overflow: hidden;
   display: flex;
@@ -39,7 +42,7 @@
 }
 .order-group__item__title {
   font-size: 24rpx;
-  color: #666;
+  color: #024E9A;
   line-height: 32rpx;
 }
 .order-group__item__icon {

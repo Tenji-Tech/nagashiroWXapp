@@ -1,46 +1,13 @@
 <view class="goods-list-container">
-  <filter
-    wr-class="filter-container"
-    bind:change="handleFilterChange"
-    layout="{{layout}}"
-    sorts="{{sorts}}"
-    overall="{{overall}}"
-    bind:showFilterPopup="showFilterPopup"
-  >
-    <filter-popup
-      slot="filterPopup"
-      show="{{show}}"
-      bind:showFilterPopupClose="showFilterPopupClose"
-      bind:reset="reset"
-      bind:confirm="confirm"
-    >
-      <view class="price-container" slot="filterSlot">
-        <view class="price-between">价格区间</view>
-        <view class="price-ipts-wrap">
-          <t-input
-            align="center"
-            type="number"
-            t-class="price-ipt"
-            placeholder="最低价"
-            value="{{minVal}}"
-            bindchange="onMinValAction"
-          />
-          <view class="price-divided">-</view>
-          <t-input
-            align="center"
-            type="number"
-            t-class="price-ipt"
-            placeholder="最高价"
-            value="{{maxVal}}"
-            bindchange="onMaxValAction"
-          />
-        </view>
-      </view>
-    </filter-popup>
-  </filter>
-  <view class="empty-wrap" wx:if="{{goodsList.length === 0 && hasLoaded}}">
-    <t-empty t-class="empty-tips" size="240rpx" description="暂无相关商品" />
+
+  <!-- 搜索框 -->
+  <view class="search-container">
+    <view class="search-wrapper" bind:tap="navToSearchPage">
+      <image class="search-icon" src="/images/icons/search.png"></image>
+      <input class="search-input" type="text" placeholder="北海道三文鱼" placeholder-style="color:#00578E;" bindinput="onInput"></input>
+    </view>
   </view>
+  <!-- 商品列表 -->
   <view class="category-goods-list" wx:if="{{goodsList.length}}">
     <goods-list
       wr-class="wr-goods-list"

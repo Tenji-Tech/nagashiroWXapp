@@ -2,31 +2,17 @@
   <t-loading theme="circular" size="40rpx" text="加载中..." inherit-color />
 </view>
 
-<view class="home-page-header">
-  <view class="search" bind:tap="navToSearchPage">
-    <t-search
-      t-class-input="t-search__input"
-      t-class-input-container="t-search__input-container"
-      placeholder="北海道産サーモン"
-      leftIcon=""
-      disabled
-    >
-      <t-icon slot="left-icon" prefix="wr" name="search" size="40rpx" color="#bbb" />
-    </t-search>
+<!-- 顶部搜索框 -->
+<view class="home-page-top-container">
+  <view class="left-view">
+    <image class="top-logo" src="/images/nagashiro_logo.png" mode=""/>
   </view>
-  <!-- <view class="swiper-wrap">
-    <t-swiper
-      wx:if="{{imgSrcs.length > 0}}"
-      current="{{current}}"
-      autoplay="{{autoplay}}"
-      duration="{{duration}}"
-      interval="{{interval}}"
-      navigation="{{navigation}}"
-      imageProps="{{swiperImageProps}}"
-      list="{{imgSrcs}}"
-      bind:click="navToActivityDetail"
-    />
-  </view> -->
+  <view class="search-container right-view">
+    <view class="search-wrapper" bind:tap="navToSearchPage">
+      <image class="search-icon" src="/images/icons/search.png"></image>
+      <input class="search-input" type="text" placeholder="北海道三文鱼" placeholder-style="color:#00578E;" bindinput="onInput"></input>
+    </view>
+  </view>
 </view>
 
 <!-- 首页内容 -->
@@ -34,11 +20,11 @@
   <view class="category">
     <view class="category-item category-sea" bindtap="navigateToSeasonSeaFoods">
       <image src="/images/home_seasonal_seafood.png" class="category-image" />
-      <text class="category-title">季節の海産物</text>
+      <text class="category-title">季节海产</text>
     </view>
     <view class="category-item category-veg" bindtap="navigateToSeasonVegetables">
       <image src="/images/home_seasonal_vegetables.png" class="category-image" />
-      <text class="category-title">季節の野菜</text>
+      <text class="category-title">时令蔬菜</text>
     </view>
   </view>
 </view>
@@ -47,17 +33,17 @@
 <view class="home-page-header">
   <view class="home-recommended-products">
     <view class="recommended-button-container">
-      <button class="recommended-btn">定番のおすすめ</button>
+      <button class="recommended-btn">常购推荐</button>
     </view>
     <view class="recommended-items-container">
       <view class="recommended-item">
         <!-- 第一个子视图内容 -->
         <view class="item-content">
           <image src="/images/home/recommended/001.png" class="item-image" mode="aspectFit"></image>
-          <text class="item-label-title">冷凍されたカットされたサバ</text>
+          <text class="item-label-title">冷冻青花鱼切块</text>
           <text class="item-label-price">JP¥ 1,398</text>
           <button class="add-cart-button">
-            <text class="button-text">カートに入れる</text>
+            <text class="button-text">加入购物车</text>
           </button>
         </view>
       </view>
@@ -65,10 +51,10 @@
         <!-- 第二个子视图内容 -->
         <view class="item-content">
           <image src="/images/home/recommended/002.png" class="item-image" mode="aspectFit"></image>
-          <text class="item-label-title">北海道産のホタテ貝</text>
+          <text class="item-label-title">北海道干贝</text>
           <text class="item-label-price">JP¥ 2,460</text>
           <button class="add-cart-button">
-            <text class="button-text">カートに入れる</text>
+            <text class="button-text">加入购物车</text>
           </button>
         </view>
       </view>
@@ -76,10 +62,10 @@
         <!-- 第三个子视图内容 -->
         <view class="item-content">
           <image src="/images/home/recommended/003.png" class="item-image" mode="aspectFit"></image>
-          <text class="item-label-title">冷凍された白身魚の切り身</text>
+          <text class="item-label-title">冷冻白身鱼切块</text>
           <text class="item-label-price">JP¥ 1,691</text>
           <button class="add-cart-button">
-            <text class="button-text">カートに入れる</text>
+            <text class="button-text">加入购物车</text>
           </button>
         </view>
       </view>

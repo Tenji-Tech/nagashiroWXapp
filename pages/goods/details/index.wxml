@@ -13,7 +13,6 @@
     <view class="goods-info">
       <view class="goods-number">
         <view class="goods-price">
-          JP
           <price
             wr-class="class-goods-price"
             symbol-class="class-goods-symbol"

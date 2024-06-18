@@ -40,17 +40,9 @@
 				  symbol="{{currency}}"
 				  price="{{goods.price}}"
         />
-				<!-- <image
-					src="/images/add2cart.png"
-				  class="goods-card__add-cart"
-				  id="{{independentID}}-cart"
-				  data-id="{{independentID}}"
-				  catchtap="addCartHandle"
-					style="width: 130rpx; height: 32rpx;"
-        /> -->
         <button class="add-cart-button">
           <image src="/images/icons/add.png" class="icon"></image>
-          <text class="button-text">カートに入れる</text>
+          <text class="button-text">加入购物车</text>
         </button>
 			</view>
 		</view>
