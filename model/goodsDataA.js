@@ -658,10 +658,10 @@ const goodsA = [
     soldNum: 350,
     isPutOnSale: 1,
     categoryIds: [
-      'A5',
+      'A1',
     ],
     groupIdList: [
-      'A5',
+      'A1',
     ],
     specList: [],
     skuList: [
@@ -890,10 +890,10 @@ const goodsA = [
     soldNum: 325,
     isPutOnSale: 1,
     categoryIds: [
-      'A8',
+      'B3',
     ],
     groupIdList: [
-      'A8',
+      'B3',
     ],
     specList: [],
     skuList: [
