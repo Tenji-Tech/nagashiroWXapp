@@ -8,6 +8,7 @@ const goodsE = require('goodsDataE.js');
 const goodsF = require('goodsDataF.js');
 const goodsG = require('goodsDataG.js');
 const goodsZ = require('goodsDataZ.js');
+const goodsZ24M6 = require('goodsDataZ_24M6.js');
 
 const imgPrefix = cdnBase;
 
@@ -24,6 +25,7 @@ const allGoods = [
   ...goodsF.default,
   ...goodsG.default,
   ...goodsZ.default,
+  ...goodsZ24M6.default,
 ];
 
 console.log("allGoods:",allGoods);

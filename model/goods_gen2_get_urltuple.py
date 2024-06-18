@@ -155,7 +155,7 @@ dataG = """
 # 消耗品.jpg -> 01.jpg
 """
 
-dataZ = """
+dataZ1 = """
 # Z1
 # メヒカリ.jpg -> 01.jpg
 # 鰈(カレイ).jpg -> 02.jpg
@@ -193,6 +193,54 @@ dataZ = """
 # 枇杷.jpg -> 03.jpg
 # マンゴー.jpg -> 04.jpg
 """
+
+dataZ_m6 = """
+# Z1
+# シタビラメ.jpg -> 21.jpg
+# ヒラマサ.jpg -> 22.jpg
+# ゴマフエダイ.jpg -> 23.jpg
+# シマアオダイ.jpg -> 24.jpg
+# Z3
+# クマエビ.jpg -> 21.jpg
+# マガキガイ.jpg -> 22.jpg
+# ホタテガイ.jpg -> 23.jpg
+# イセエビ.jpg -> 24.jpg
+# ベニズワイガニ.jpg -> 25.jpg
+# ケガニ.jpg -> 26.jpg
+# Z4
+# 加茂茄子.jpg -> 21.jpg
+# 糸瓜.jpg -> 22.jpg
+# 枝豆.jpg -> 23.jpg
+# 白瓜.jpg -> 24.jpg
+# 新さつま芋.jpg -> 25.jpg
+# 冬瓜.jpg -> 26.jpg
+# もろきゅうり.jpg -> 27.jpg
+# 加賀太胡瓜.jpg -> 28.jpg
+# 石川芋.jpg -> 29.jpg
+# 丸茄子.jpg -> 30.jpg
+# 水茄子.jpg -> 31.jpg
+# 皮付きヤングコーン.jpg -> 32.jpg
+# とうもろこし.jpg -> 33.jpg
+# ハス.jpg -> 34.jpg
+# Z5
+# パパイヤ.jpg -> 21.jpg
+# メロン.jpg -> 22.jpg
+# ピオーネ.jpg -> 23.jpg
+# びわ.jpg -> 24.jpg
+# 夕張メロン.jpg -> 25.jpg
+# アメリカンチェリー.jpg -> 26.jpg
+# 巨峰.jpg -> 27.jpg
+# いちじく.jpg -> 28.jpg
+# 青柚子.jpg -> 29.jpg
+# 桃.jpg -> 30.jpg
+# ゴールドキウイ.jpg -> 31.jpg
+# さくらんぼ.jpg -> 32.jpg
+# 宮古島マンゴー.jpg -> 33.jpg
+# スイカ.jpg -> 34.jpg
+# マンゴー.jpg -> 35.jpg
+# シャインマスカット.jpg -> 36.jpg
+"""
+
 def parse_data(data):
     lines = data.strip().split('\n')
     input_products_C = []
@@ -206,12 +254,13 @@ def parse_data(data):
         elif line.startswith('#'):
             item, image = line[2:].split(' -> ')
             item_name = item.split('.jpg')[0]
-            cloud_path = f"cloud://nagashiro-7gx3ygvt2a49505e.6e61-nagashiro-7gx3ygvt2a49505e-1327079852/images/goods_demo_rename/{current_alphabeta}/{current_alphabeta}{current_category}/{image}"
+            cloud_path = f"cloud://nagashiro-7gx3ygvt2a49505e.6e61-nagashiro-7gx3ygvt2a49505e-1327079852/images/goods_m6_catz/{current_alphabeta}/{current_alphabeta}{current_category}/{image}"
+            # cloud_path = f"cloud://nagashiro-7gx3ygvt2a49505e.6e61-nagashiro-7gx3ygvt2a49505e-1327079852/images/goods_demo_rename/{current_alphabeta}/{current_alphabeta}{current_category}/{image}"
             input_products_C.append((item_name, cloud_path))
     
     return input_products_C
 
-input_products_C = parse_data(dataZ)
+input_products_C = parse_data(dataZ_m6)
 
 # Display the result
 for product in input_products_C:
