@@ -327,7 +327,50 @@ input_products_Z = [
 ('枇杷', 'cloud://nagashiro-7gx3ygvt2a49505e.6e61-nagashiro-7gx3ygvt2a49505e-1327079852/images/goods_demo_rename/Z/Z5/03.jpg') ,
 ('マンゴー', 'cloud://nagashiro-7gx3ygvt2a49505e.6e61-nagashiro-7gx3ygvt2a49505e-1327079852/images/goods_demo_rename/Z/Z5/04.jpg') ,
 ]
-js_objects = generate_js_object(input_products_Z)
+
+input_products_Z_24M6 = [
+#     ('シタビラメ', 'cloud://nagashiro-7gx3ygvt2a49505e.6e61-nagashiro-7gx3ygvt2a49505e-1327079852/images/goods_m6_catz/Z/Z1/21.jpg') ,
+# ('ヒラマサ', 'cloud://nagashiro-7gx3ygvt2a49505e.6e61-nagashiro-7gx3ygvt2a49505e-1327079852/images/goods_m6_catz/Z/Z1/22.jpg') ,
+# ('ゴマフエダイ', 'cloud://nagashiro-7gx3ygvt2a49505e.6e61-nagashiro-7gx3ygvt2a49505e-1327079852/images/goods_m6_catz/Z/Z1/23.jpg') ,
+# ('シマアオダイ', 'cloud://nagashiro-7gx3ygvt2a49505e.6e61-nagashiro-7gx3ygvt2a49505e-1327079852/images/goods_m6_catz/Z/Z1/24.jpg') ,
+# ('クマエビ', 'cloud://nagashiro-7gx3ygvt2a49505e.6e61-nagashiro-7gx3ygvt2a49505e-1327079852/images/goods_m6_catz/Z/Z3/21.jpg') ,
+# ('マガキガイ', 'cloud://nagashiro-7gx3ygvt2a49505e.6e61-nagashiro-7gx3ygvt2a49505e-1327079852/images/goods_m6_catz/Z/Z3/22.jpg') ,
+# ('ホタテガイ', 'cloud://nagashiro-7gx3ygvt2a49505e.6e61-nagashiro-7gx3ygvt2a49505e-1327079852/images/goods_m6_catz/Z/Z3/23.jpg') ,
+# ('イセエビ', 'cloud://nagashiro-7gx3ygvt2a49505e.6e61-nagashiro-7gx3ygvt2a49505e-1327079852/images/goods_m6_catz/Z/Z3/24.jpg') ,
+# ('ベニズワイガニ', 'cloud://nagashiro-7gx3ygvt2a49505e.6e61-nagashiro-7gx3ygvt2a49505e-1327079852/images/goods_m6_catz/Z/Z3/25.jpg') ,
+# ('ケガニ', 'cloud://nagashiro-7gx3ygvt2a49505e.6e61-nagashiro-7gx3ygvt2a49505e-1327079852/images/goods_m6_catz/Z/Z3/26.jpg') ,
+# ('加茂茄子', 'cloud://nagashiro-7gx3ygvt2a49505e.6e61-nagashiro-7gx3ygvt2a49505e-1327079852/images/goods_m6_catz/Z/Z4/21.jpg') ,
+# ('糸瓜', 'cloud://nagashiro-7gx3ygvt2a49505e.6e61-nagashiro-7gx3ygvt2a49505e-1327079852/images/goods_m6_catz/Z/Z4/22.jpg') ,
+# ('枝豆', 'cloud://nagashiro-7gx3ygvt2a49505e.6e61-nagashiro-7gx3ygvt2a49505e-1327079852/images/goods_m6_catz/Z/Z4/23.jpg') ,
+# ('白瓜', 'cloud://nagashiro-7gx3ygvt2a49505e.6e61-nagashiro-7gx3ygvt2a49505e-1327079852/images/goods_m6_catz/Z/Z4/24.jpg') ,
+# ('新さつま芋', 'cloud://nagashiro-7gx3ygvt2a49505e.6e61-nagashiro-7gx3ygvt2a49505e-1327079852/images/goods_m6_catz/Z/Z4/25.jpg') ,
+# ('冬瓜', 'cloud://nagashiro-7gx3ygvt2a49505e.6e61-nagashiro-7gx3ygvt2a49505e-1327079852/images/goods_m6_catz/Z/Z4/26.jpg') ,
+# ('もろきゅうり', 'cloud://nagashiro-7gx3ygvt2a49505e.6e61-nagashiro-7gx3ygvt2a49505e-1327079852/images/goods_m6_catz/Z/Z4/27.jpg') ,
+# ('加賀太胡瓜', 'cloud://nagashiro-7gx3ygvt2a49505e.6e61-nagashiro-7gx3ygvt2a49505e-1327079852/images/goods_m6_catz/Z/Z4/28.jpg') ,
+# ('石川芋', 'cloud://nagashiro-7gx3ygvt2a49505e.6e61-nagashiro-7gx3ygvt2a49505e-1327079852/images/goods_m6_catz/Z/Z4/29.jpg') ,
+# ('丸茄子', 'cloud://nagashiro-7gx3ygvt2a49505e.6e61-nagashiro-7gx3ygvt2a49505e-1327079852/images/goods_m6_catz/Z/Z4/30.jpg') ,
+# ('水茄子', 'cloud://nagashiro-7gx3ygvt2a49505e.6e61-nagashiro-7gx3ygvt2a49505e-1327079852/images/goods_m6_catz/Z/Z4/31.jpg') ,
+('皮付きヤングコーン', 'cloud://nagashiro-7gx3ygvt2a49505e.6e61-nagashiro-7gx3ygvt2a49505e-1327079852/images/goods_m6_catz/Z/Z4/32.jpg') ,
+('とうもろこし', 'cloud://nagashiro-7gx3ygvt2a49505e.6e61-nagashiro-7gx3ygvt2a49505e-1327079852/images/goods_m6_catz/Z/Z4/33.jpg') ,
+('ハス', 'cloud://nagashiro-7gx3ygvt2a49505e.6e61-nagashiro-7gx3ygvt2a49505e-1327079852/images/goods_m6_catz/Z/Z4/34.jpg') ,
+('パパイヤ', 'cloud://nagashiro-7gx3ygvt2a49505e.6e61-nagashiro-7gx3ygvt2a49505e-1327079852/images/goods_m6_catz/Z/Z5/21.jpg') ,
+('メロン', 'cloud://nagashiro-7gx3ygvt2a49505e.6e61-nagashiro-7gx3ygvt2a49505e-1327079852/images/goods_m6_catz/Z/Z5/22.jpg') ,
+('ピオーネ', 'cloud://nagashiro-7gx3ygvt2a49505e.6e61-nagashiro-7gx3ygvt2a49505e-1327079852/images/goods_m6_catz/Z/Z5/23.jpg') ,
+('びわ', 'cloud://nagashiro-7gx3ygvt2a49505e.6e61-nagashiro-7gx3ygvt2a49505e-1327079852/images/goods_m6_catz/Z/Z5/24.jpg') ,
+('夕張メロン', 'cloud://nagashiro-7gx3ygvt2a49505e.6e61-nagashiro-7gx3ygvt2a49505e-1327079852/images/goods_m6_catz/Z/Z5/25.jpg') ,
+('アメリカンチェリー', 'cloud://nagashiro-7gx3ygvt2a49505e.6e61-nagashiro-7gx3ygvt2a49505e-1327079852/images/goods_m6_catz/Z/Z5/26.jpg') ,
+('巨峰', 'cloud://nagashiro-7gx3ygvt2a49505e.6e61-nagashiro-7gx3ygvt2a49505e-1327079852/images/goods_m6_catz/Z/Z5/27.jpg') ,
+('いちじく', 'cloud://nagashiro-7gx3ygvt2a49505e.6e61-nagashiro-7gx3ygvt2a49505e-1327079852/images/goods_m6_catz/Z/Z5/28.jpg') ,
+('青柚子', 'cloud://nagashiro-7gx3ygvt2a49505e.6e61-nagashiro-7gx3ygvt2a49505e-1327079852/images/goods_m6_catz/Z/Z5/29.jpg') ,
+('桃', 'cloud://nagashiro-7gx3ygvt2a49505e.6e61-nagashiro-7gx3ygvt2a49505e-1327079852/images/goods_m6_catz/Z/Z5/30.jpg') ,
+('ゴールドキウイ', 'cloud://nagashiro-7gx3ygvt2a49505e.6e61-nagashiro-7gx3ygvt2a49505e-1327079852/images/goods_m6_catz/Z/Z5/31.jpg') ,
+('さくらんぼ', 'cloud://nagashiro-7gx3ygvt2a49505e.6e61-nagashiro-7gx3ygvt2a49505e-1327079852/images/goods_m6_catz/Z/Z5/32.jpg') ,
+('宮古島マンゴー', 'cloud://nagashiro-7gx3ygvt2a49505e.6e61-nagashiro-7gx3ygvt2a49505e-1327079852/images/goods_m6_catz/Z/Z5/33.jpg') ,
+('スイカ', 'cloud://nagashiro-7gx3ygvt2a49505e.6e61-nagashiro-7gx3ygvt2a49505e-1327079852/images/goods_m6_catz/Z/Z5/34.jpg') ,
+('マンゴー', 'cloud://nagashiro-7gx3ygvt2a49505e.6e61-nagashiro-7gx3ygvt2a49505e-1327079852/images/goods_m6_catz/Z/Z5/35.jpg') ,
+('シャインマスカット', 'cloud://nagashiro-7gx3ygvt2a49505e.6e61-nagashiro-7gx3ygvt2a49505e-1327079852/images/goods_m6_catz/Z/Z5/36.jpg') ,
+]
+js_objects = generate_js_object(input_products_Z_24M6)
 
 def format_js_object(product):
     def format_value(value):
